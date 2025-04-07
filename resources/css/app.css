@@ -1,0 +1,41 @@
+@import "tailwindcss" theme(static);
+@source "../views/";
+@source "../../app/";
+
+
+@theme{
+  --color-primary: #04042E;
+  --color-secondary: #02021E;
+  --font-inter:"Inter", sans-serif;
+}
+
+body{
+  font-family: "Inter";
+}
+
+a{
+  text-decoration: none;
+}
+
+/* home page css  */
+#hero-section{
+  background-image: url("../images/home/home-banner.png");
+}
+#appointment{
+  background-image: url("../images/home/appointment.png");
+}
+
+/* about page css  */
+#about-hero{
+  background-image: url("../images/about/about-hero.png");
+}
+
+#mastery-image{
+  background-image: url('../images/about/mastery.png');
+}
+
+/* manswear page css  */
+#manswear-hero-section{
+  background-image:url('../images/manswear/manswear-hero.png');
+}
+

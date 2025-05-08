@@ -8,6 +8,8 @@
 @theme{
   --color-primary: #04042E;
   --color-secondary: #02021E;
+  --color-hover: #000000;
+  --color-wedding: #02021E;
   --font-inter:"Inter", sans-serif;
 }
 
@@ -20,24 +22,24 @@ a{
 }
 
 /* home page css  */
-#hero-section{
+/* #hero-section{
   background-image: url("../images/home/home-banner.png");
-}
-#appointment{
+} */
+/* #appointment{
   background-image: url("../images/home/appointment.png");
-}
+} */
 
 /* about page css  */
-#about-hero{
+/* #about-hero{
   background-image: url("../images/about/about-hero.png");
-}
+} */
 
-#mastery-image{
+/* #mastery-image{
   background-image: url('../images/about/mastery.png');
-}
+} */
 
 /* manswear page css  */
-#manswear-hero-section{
+/* #manswear-hero-section{
   background-image:url('../images/manswear/manswear-hero.png');
-}
+} */
 

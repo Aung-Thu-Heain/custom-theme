@@ -1,11 +1,11 @@
 <footer class="content-info">
-  @php(dynamic_sidebar('sidebar-footer'))
+  {{-- @php(dynamic_sidebar('sidebar-footer')) --}}
   <section class="footer">
     <footer class="bg-primary text-white p-10">
       <div class="max-w-6xl mx-auto" >
           <footer class=" grid md:grid-cols-4 gap-8   py-10  ">
 
-              <div class="text-center" data-aos="fade-right">
+              <div class="text-center" >
                   <img src="{{Vite::asset('resources/images/header/logo.svg')}}" alt="Logo" class="mx-auto mb-4 w-50 ">
                   <div class="flex  justify-center  gap-4 mt-4">
                       <a href="#"><img src="{{Vite::asset('resources/images/icons/whatsapp.png')}}" alt="WhatsApp" class="w-6"></a>
@@ -16,7 +16,7 @@
               </div>
 
               <!-- Navigation -->
-              <div class="md:ms-20" data-aos="fade-right">
+              <div class="md:ms-20" >
                   <h3 class="font-bold text-[18px] mb-4">Navigation</h3>
                   <ul class="space-y-2 text-[18px] font-normal">
                       <li><a href="#" class="hover:text-yellow-400">About</a></li>
@@ -27,7 +27,7 @@
               </div>
 
               <!-- Quick Links -->
-              <div data-aos="fade-left">
+              <div >
                   <h3 class="font-bold text-[18px] mb-4">Quick Links</h3>
                   <ul class="space-y-2 text-[18px] font-normal">
                       <li><a href="#" class="hover:text-yellow-400">Fabrics</a></li>
@@ -40,7 +40,7 @@
               </div>
 
               <!-- Information -->
-              <div data-aos="fade-left">
+              <div >
                   <h3 class="font-bold text-[18px] mb-4">Information</h3>
                   <ul class="space-y-2 text-[18px] font-normal">
                       <li class="flex items-center gap-2"><img src="{{Vite::asset('resources/images/icons/ri-time-line.png')}}" class="w-5"> Everyday 9:15 AM - 9:30 PM</li>

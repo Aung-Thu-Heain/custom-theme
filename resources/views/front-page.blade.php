@@ -4,7 +4,7 @@
   {{-- @while(have_posts()) @php(the_post())
   @endwhile --}}
 <section class="hero">
-    <div id="hero-section" class="w-auto relative  bg-cover bg-no-repeat " style="height: 601px;">
+    <div id="hero-section" class="w-auto relative  bg-cover bg-no-repeat " style="height: 601px;background-image: url('{{Vite::asset('resources/images/home/home-banner.png')}}');">
         <div class="absolute inset-0 bg-black/70"></div>
         <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6">
             <p class=" mb-2 font-normal text-[24px] " data-aos="fade-left">With Bangkok’s Finest Bespoke Tailoring,</p>

@@ -1,5 +1,5 @@
 <section class="apppointment">
-  <div id="appointment" class="w-auto relative  bg-cover bg-bottom bg-no-repeat" style="height: 500px;">
+  <div id="appointment" class="w-auto relative  bg-cover bg-bottom bg-no-repeat" style="height: 500px;background-image: url('{{Vite::asset('resources/images/home/appointment.png')}}')">
       <div class="absolute inset-0 bg-black/70"></div>
       <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6">
           <p class="text-[36px] font-bold mb-2" data-aos="zoom-in">Your Perfect Suit Starts Here!</p>

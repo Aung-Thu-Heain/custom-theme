@@ -36,26 +36,26 @@
 
 <section class="signature-style bg-secondary  text-white">
      <div class="max-w-7xl py-30 text-center mx-auto">
-        <h1 class="pb-20 text-[36px]" data-aos="zoom-in">Signature Styles</h1>
+        <h1 class="pb-20 text-[36px]" >Signature Styles</h1>
 
         <div class=" text-center  border-b border-gray-20 text-gray-400 border-gray-700">
           <ul class="flex flex-wrap justify-center -mb-px text-[24px] leading-[39px]">
-              <li class="mx-2 md:mx-12" data-aos="zoom-in">
+              <li class="mx-2 md:mx-12" >
                   <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Suit</a>
               </li>
-              <li class="mx-2 md:mx-12" data-aos="zoom-in">
+              <li class="mx-2 md:mx-12" >
                   <a href="#" class="inline-block p-4 text-white border-b-2 border-white rounded-t-lg active " aria-current="page">Shirt</a>
               </li>
-              <li class="mx-2 md:mx-12" data-aos="zoom-in">
+              <li class="mx-2 md:mx-12" >
                   <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">Jacket</a>
               </li>
-              <li class="mx-2 md:mx-12" data-aos="zoom-in">
+              <li class="mx-2 md:mx-12" >
                   <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">Pant</a>
               </li>
-              <li class="mx-2 md:mx-12" data-aos="zoom-in">
+              <li class="mx-2 md:mx-12" >
                 <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">Vest</a>
             </li>
-            <li class="mx-2 md:mx-12" data-aos="zoom-in">
+            <li class="mx-2 md:mx-12" >
               <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">OverCoat</a>
           </li>
           </ul>
@@ -103,8 +103,8 @@
 
 <section class="bg-primary fabric-selection">
     <div class="max-w-7xl text-white mx-auto px-10 py-20">
-      <h1 class="text-[35px]" data-aos="fade-down">Fabric Selection</h1>
-      <span class="text-[24px]" data-aos="fade-down">Handpicked Luxury, Woven to Perfection.</span>
+      <h1 class="text-[35px]" >Fabric Selection</h1>
+      <span class="text-[24px]" >Handpicked Luxury, Woven to Perfection.</span>
       <div class="grid grid-cols-2 md:grid-cols-7 gap-1 mt-20">
         <div class="relative">
             <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/manswear/fabric-1.png')}}" alt="">

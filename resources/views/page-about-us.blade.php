@@ -1,15 +1,14 @@
 @extends('layouts.app')
 @section('content')
 <section class="hero">
-      <div class="grid grid-cols-1 md:grid-cols-3">
-        <div id="about-hero" style="background-image: url('{{Vite::asset('resources/images/about/about-hero.png')}}')"  class="col-span-2 p-10 relative bg-cover bg-no-repeat text-light bg-black h-[601px]">
-          <div class="absolute inset-0 bg-black/70"></div>
-          <div class="absolute inset-0 text-white mt-20 p-10">
+      <div class="grid grid-cols-1 md:grid-cols-9">
+        <div id="about-hero" style="background-image: url('{{Vite::asset('resources/images/about/about-hero.png')}}')"  class="col-span-5 p-10 relative bg-cover bg-no-repeat text-light bg-black h-[601px]">
+          <div class="absolute inset-0 text-white mt-20 p-10 pl-24">
             <p class="text-[24px]" data-aos="zoom-in">About Us</p>
             <h1 class="text-[48px]" data-aos="zoom-out">Luxury in Every Thread!</h1>
           </div>
         </div>
-        <div class="bg-[#4F4823] h-[601px] text-justify  p-10 my-auto items-center justify-center text-light">
+        <div class="bg-[#4F4823] h-[601px] text-justify col-span-4  p-10 my-auto items-center justify-center text-light">
          <div class="mt-20 text-[20px] text-white">
           <p data-aos="fade-left">True luxury is not just about the finest materials but about the care, craftsmanship, and attention to detail woven into every stitch.</p><br>
           <p data-aos="fade-right">Our bespoke tailoring service is dedicated to creating timeless elegance, ensuring every garment reflects the individuality and sophistication of its wearer.</p>
@@ -19,39 +18,39 @@
 </section>
 
 <section class="mastery">
-  <div class="grid grid-cols-1 md:grid-cols-3 mt-5 p-20">
-    <div class="col-span-2">
+  <div class="grid grid-cols-1 md:grid-cols-9 mt-5 p-20">
+    <div class="col-span-5">
       <p class="text-[36px] font-bold" data-aos="fade-left">Mastery</p>
       <p class="text-[36px]" data-aos="fade-right">in Craftsmanship</p>
     </div>
-    <div class="">
-      <p class="text-[20px]" data-aos="fade-left">Our expertise is not just about creating clothing; it’s about crafting an experience that leaves you feeling confident, comfortable, and unique.</p>
+    <div class="col-span-4">
+      <p class="text-[24px]" data-aos="fade-left">Our expertise is not just about creating clothing; it’s about crafting an experience that leaves you feeling confident, comfortable, and unique.</p>
     </div>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-3 md:p-20 justify-items-stretch">
-    <div class="col-span-2 p-5 space-y-10 my-auto">
-      <div class="grid grid-cols-2 justify-items-center gap-4">
-        <div class="text-center" data-aos="zoom-in">
-          <span class="text-xl font-bold">10+</span><br>
-          Years of Expertise
+  <div class="grid grid-cols-1 md:grid-cols-9 md:p-20 justify-items-stretch">
+    <div class="col-span-5 py-20 ps-5">
+      <div class="grid grid-cols-2 justify-items-center">
+        <div class="text-start  w-100 h-40" data-aos="zoom-in">
+          <span class="text-[36px] font-bold">10+</span><br>
+          <span class="text-[24px]">Years of Expertise</span>
         </div>
-        <div class="text-center" data-aos="zoom-in">
-          <span class="text-xl font-bold">700+</span><br>
-          Satisfied Clients
+        <div class="text-start  w-100" data-aos="zoom-in">
+          <span class="text-[36px] font-bold">700+</span><br>
+          <span class="text-[24px]">Satisfied Clients</span>
         </div>
       </div>
-      <div class="grid grid-cols-2 justify-items-center gap-4">
-        <div class="text-center" data-aos="zoom-in">
-          <span class="text-xl font-bold">98%</span><br>
-          Client Satisfaction
+      <div class="grid grid-cols-2 justify-items-center ">
+        <div class="text-start  w-100 h-40" data-aos="zoom-in"">
+          <span class="text-[36px] font-bold">98%</span><br>
+          <span class="text-[24px]">Client Satisfaction</span>
         </div>
-        <div class="text-center" data-aos="zoom-in">
-          <span class="text-xl font-bold">500+</span><br>
-          Unique Served
+        <div class="text-start  w-100 h-40" data-aos="zoom-in"">
+          <span class="text-[36px] font-bold">500+</span><br>
+         <span class="text-[24px]">Unique Served</span>
         </div>
       </div>
     </div>
-    <div id="mastery-image" style="background-image: url('{{Vite::asset('resources/images/about/mastery.png')}}')" class="col-span-1 bg-cover bg-no-repeat bg-center h-[455px]" data-aos="zoom-out"></div>
+    <div id="mastery-image" style="background-image: url('{{Vite::asset('resources/images/about/mastery.png')}}')" class="col-span-4 bg-cover bg-no-repeat bg-center h-[455px]" data-aos="zoom-out"></div>
   </div>
   </div>
 </section>
@@ -115,8 +114,8 @@
 <section class="Our-Commitments">
   <div class="grid grid-cols-1 lg:grid-cols-3 ">
     <div class="bg-black text-white flex flex-col justify-center p-10 lg:p-20 col-span-1">
-      <h2 class="text-4xl font-bold mb-4" data-aos="fade-right">Our <br> Commitments</h2>
-      <p class="text-lg leading-relaxed" data-aos="fade-left">
+      <h2 class="text-4xl font-bold mb-4" >Our <br> Commitments</h2>
+      <p class="text-lg leading-relaxed" >
         Every suit we craft tells a story of dedication, precision, and an unwavering commitment to elegance.
       </p>
     </div>
@@ -124,33 +123,33 @@
     <div class="bg-secondary text-white p-10 lg:p-20 col-span-2 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
 
       <div class="flex flex-col gap-2 md:p-6">
-        <img src="{{Vite::asset('resources/images/icons/Wreath.png')}}" data-aos="zoom-in" alt="Unparalleled Quality" class="w-8 h-8">
-        <h3 class="font-bold text-lg" data-aos="fade-right">Unparalleled Quality</h3>
-        <p class="text-sm text-gray-300 text-[20px] leading-[32px]" data-aos="fade-right">
+        <img src="{{Vite::asset('resources/images/icons/Wreath.png')}}"  alt="Unparalleled Quality" class="w-8 h-8">
+        <h3 class="font-bold text-lg">Unparalleled Quality</h3>
+        <p class="text-sm text-gray-300 text-[20px] leading-[32px]">
           Only the finest materials and craftsmanship, ensuring a garment of enduring beauty and durability.
         </p>
       </div>
 
       <div class="flex flex-col gap-2 md:p-6">
-        <img src="{{Vite::asset('resources/images/icons/Ruler.png')}}" data-aos="zoom-in" alt="Exclusivity & Personalization" class="w-8 h-8">
-        <h3 class="font-bold text-lg" data-aos="fade-right">Exclusivity & Personalization</h3>
-        <p class="text-sm text-gray-300 text-[20px] leading-[32px]" data-aos="fade-right">
+        <img src="{{Vite::asset('resources/images/icons/Ruler.png')}}"  alt="Exclusivity & Personalization" class="w-8 h-8">
+        <h3 class="font-bold text-lg">Exclusivity & Personalization</h3>
+        <p class="text-sm text-gray-300 text-[20px] leading-[32px]">
           Every design detail, from silhouette to stitching, is made uniquely for each client.
         </p>
       </div>
 
       <div class="flex flex-col gap-2 md:p-6">
-        <img src="{{Vite::asset('resources/images/icons/Success.png')}}" data-aos="zoom-in" alt="A Seamless Experience" class="w-8 h-8">
-        <h3 class="font-bold text-lg" data-aos="fade-right">A Seamless Experience</h3>
-        <p class="text-sm text-gray-300 text-[20px] leading-[32px]" data-aos="fade-right">
+        <img src="{{Vite::asset('resources/images/icons/Success.png')}}"  alt="A Seamless Experience" class="w-8 h-8">
+        <h3 class="font-bold text-lg" >A Seamless Experience</h3>
+        <p class="text-sm text-gray-300 text-[20px] leading-[32px]" >
           Our by-appointment service ensures a private, relaxed, and personalized tailoring journey.
         </p>
       </div>
 
       <div class="flex flex-col gap-2 md:p-6">
-        <img src="{{Vite::asset('resources/images/icons/Suit.png')}}" data-aos="zoom-in" alt="Sustainability with Style" class="w-8 h-8">
-        <h3 class="font-bold text-lg" data-aos="fade-right">Sustainability with Style</h3>
-        <p class="text-sm text-gray-300 text-[20px] leading-[32px]" data-aos="fade-right">
+        <img src="{{Vite::asset('resources/images/icons/Suit.png')}}"  alt="Sustainability with Style" class="w-8 h-8">
+        <h3 class="font-bold text-lg" >Sustainability with Style</h3>
+        <p class="text-sm text-gray-300 text-[20px] leading-[32px]" >
           Ethically sourced fabrics and sustainable craftsmanship ensure luxury with responsibility.
         </p>
       </div>
@@ -161,7 +160,7 @@
 <section class="working procress bg-gray-100">
   <div class="max-w-7xl  py-16 mx-auto px-6 text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-12" data-aos="fade-down">Our Working Process</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
       <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 border-b-black border-b-3 text-start" data-aos="fade-down">
         <div class="text-[40px] font-bold my-3"  data-aos="fade-out">1</div>
         <h3 class="text-lg font-semibold mb-2 text-[24px]"  data-aos="fade-right">Sizing</h3>
@@ -207,17 +206,16 @@
 
 <section class="feedback bg-secondary">
   <div class=" max-w-7xl mx-auto px-6 py-16 text-center text-white">
-    <h2 class="text-3xl md:text-4xl font-bold mb-12" data-aos="fade-down">Words From Our Clients</h2>
-    <p class="mt-4  max-w-5xl mx-auto font-normal text-[24px] text-center" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12">Words From Our Clients</h2>
+    <p class="mt-4  max-w-5xl mx-auto font-normal text-[24px] text-center" >
       Our clients are at the heart of everything we do. Each testimonial is a reflection of our commitment to delivering not just impeccable suits but memorable experiences.
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 mt-20 gap-8">
-
-      <div class="  border-primary border-2 p-6 rounded-lg relative" data-aos="zoom-in">
+      <div class="  border-primary border-2 p-6 rounded-lg relative" >
         <div class="absolute -top-6 left-6 bg-indigo-800 w-12 h-12 flex items-center justify-center rounded-full text-white text-2xl">“</div>
         <div class="flex justify-start mb-4">
-          <div class="text-yellow-400 text-lg space-x-1">
+          <div class="text-yellow-300 text-3xl space-x-1 mt-5">
             <span>★</span><span>★</span><span>★</span><span>★</span><span class="text-gray-400">★</span>
           </div>
         </div>
@@ -233,10 +231,10 @@
         </div>
       </div>
 
-      <div class=" border-primary border-2 p-6 rounded-lg relative" data-aos="zoom-in">
+      <div class=" border-primary border-2 p-6 rounded-lg relative" >
         <div class="absolute -top-6 left-6 bg-indigo-800 w-12 h-12 flex items-center justify-center rounded-full text-white text-2xl">“</div>
         <div class="flex justify-start mb-4">
-          <div class="text-yellow-400 text-lg space-x-1">
+          <div class="text-yellow-300 text-3xl space-x-1 mt-5">
             <span>★</span><span>★</span><span>★</span><span>★</span><span class="text-gray-400">★</span>
           </div>
         </div>
@@ -253,10 +251,10 @@
         </div>
       </div>
 
-      <div class="border-primary border-2 p-6 rounded-lg relative" data-aos="zoom-in">
+      <div class="border-primary border-2 p-6 rounded-lg relative" >
         <div class="absolute -top-6 left-6 bg-indigo-800 w-12 h-12 flex items-center justify-center rounded-full text-white text-2xl">“</div>
         <div class="flex justify-start mb-4">
-          <div class="text-yellow-400 text-lg space-x-1">
+          <div class="text-yellow-300 text-3xl space-x-1 mt-5">
             <span>★</span><span>★</span><span>★</span><span>★</span><span class="text-gray-400">★</span>
           </div>
         </div>

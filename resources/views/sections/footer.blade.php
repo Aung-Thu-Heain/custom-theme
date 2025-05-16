@@ -6,8 +6,8 @@
           <footer class=" grid md:grid-cols-4 gap-8   py-10  ">
 
               <div class="text-center" >
-                  <img src="{{Vite::asset('resources/images/header/logo.svg')}}" alt="Logo" class="mx-auto mb-4 w-50 ">
-                  <div class="flex  justify-center  gap-4 mt-4">
+                  <img src="{{Vite::asset('resources/images/header/logo.png')}}" alt="Logo" class="mx-auto mb-4 h-[73px]">
+                  <div class="flex  justify-center  gap-4 mt-20">
                       <a href="#"><img src="{{Vite::asset('resources/images/icons/whatsapp.png')}}" alt="WhatsApp" class="w-6"></a>
                       <a href="#"><img src="{{Vite::asset('resources/images/icons/facebook.png')}}" alt="Facebook" class="w-6"></a>
                       <a href="#"><img src="{{Vite::asset('resources/images/icons/instergam.png')}}" alt="Instagram" class="w-6"></a>
@@ -50,7 +50,7 @@
                   </ul>
               </div>
           </footer>
-          <p class="text-center text-gray-400 text-sm mt-6 text-[16px]" >&copy; 2025 Icon Tailor House</p>
+          <p class="text-center text-gray-400 text-sm mt-6 text-[16px]" >&copy; <?php echo date('Y') ?> Icon Tailor House</p>
       </div>
     </footer>
    </section>

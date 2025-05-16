@@ -21,11 +21,11 @@
         <div class="max-w-6xl mx-auto text-center py-28  px-4">
             <div class="flex items-center justify-center bg-gray-100 py-4">
               <div class="border-t border-black w-1/10"></div>
-              <span class="mx-6 text-black  text-[20px] " data-aos="zoom-in-down">The Art of Bespoke Tailoring</span>
+              <span class="mx-6 text-black  text-[20px] " >The Art of Bespoke Tailoring</span>
               <div class="border-t border-black w-1/10"></div>
             </div>
-            <h1 class="font-semibold mt-6 text-[36px]" data-aos="zoom-in">About Our Craft</h1>
-            <p class="mt-4 text-gray-700 max-w-5xl mx-auto font-normal text-[24px] text-center" data-aos="fade-up">
+            <h1 class="font-semibold mt-6 text-[36px]" >About Our Craft</h1>
+            <p class="mt-4 text-gray-700 max-w-5xl mx-auto font-normal text-[24px] text-center" >
                 At Icon Tailor House, we blend traditional craftsmanship with modern elegance to create bespoke suits
                 that define sophistication. Every stitch, every cut, and every detail is meticulously designed to ensure a
                 flawless fit and timeless style.
@@ -127,28 +127,28 @@
 
 <section class="what-they-say">
   <div class="bg-secondary py-24 text-center">
-    <div class="flex justify-center items-center" data-aos="fade-right">
+    <div class="flex justify-center items-center" >
       <img src="{{Vite::asset('resources/images/home/message.png')}}" class="object-cover w-10 h-10 mr-2 " alt=""><h1 class="text-4xl font-bold text-white ">What They Say..</h1>
     </div>
-    <div class="text-white text-[24px]" data-aos="fade-left">About Icon Tailor House</div>
+    <div class="text-white text-[24px]" >About Icon Tailor House</div>
 
     <div class=" text-white py-24">
 
           <div class="max-w-6xl mx-auto flex flex-col md:flex-row p-8 items-center gap-12" >
-              <div class="w-full md:w-1/2" data-aos="fade-right">
+              <div class="w-full md:w-1/2" >
                 <img src="{{Vite::asset('resources/images/home/testimonial.png')}}" alt="Customer 1" class=" rounded-lg shadow-lg">
               </div>
-              <div class="w-full md:w-1/2" data-aos="fade-left">
+              <div class="w-full md:w-1/2" >
                   <p class="font-normal text-[20px] text-justify">"The suit fits perfectly and feels incredibly comfortable. The attention to detail was impressive, and the fabric quality is outstanding. I’ve never felt more confident wearing a suit."</p>
                   <p class="mt-4 font-bold">— James Carter, New York, USA</p>
               </div>
           </div>
 
           <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse p-8 items-center gap-12">
-              <div class="w-full md:w-1/2" data-aos="fade-left">
+              <div class="w-full md:w-1/2" >
                 <img src="{{Vite::asset('resources/images/home/testimonial2.png')}}" alt="Customer 1" class=" rounded-lg shadow-lg">
               </div>
-              <div class="w-full md:w-1/2" data-aos="fade-right">
+              <div class="w-full md:w-1/2" >
                   <p class="font-normal text-[20px] text-justify">"The whole experience was enjoyable and stress-free. The final suit looks sharp and feels great to wear. I couldn’t be happier with how it turned out."</p>
                   <p class="mt-4 font-bold">— David Thompson, London, UK</p>
               </div>
@@ -156,20 +156,20 @@
 
 
           <div class="max-w-6xl mx-auto flex flex-col md:flex-row p-8 items-center gap-12">
-              <div class="w-full md:w-1/2" data-aos="fade-right">
+              <div class="w-full md:w-1/2" >
                 <img src="{{Vite::asset('resources/images/home/testimonial3.png')}}" alt="Customer 1" class=" rounded-lg shadow-lg">
               </div>
-              <div class="w-full md:w-1/2" data-aos="fade-left">
+              <div class="w-full md:w-1/2" >
                   <p class="font-normal text-[20px] text-justify">"From the first fitting to the final result, the process was smooth and professional. The craftsmanship is top-notch, and the suit feels like it was made just for me. I’ve received so many compliments."</p>
                   <p class="mt-4 font-bold">— Liam Jeremiah, Sydney, Australia</p>
               </div>
           </div>
 
           <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse p-8 items-center gap-12">
-              <div class="w-full md:w-1/2" data-aos="fade-left">
+              <div class="w-full md:w-1/2" >
                 <img src="{{Vite::asset('resources/images/home/testimonial4.png')}}" alt="Customer 1" class=" rounded-lg shadow-lg">
               </div>
-              <div class="w-full md:w-1/2" data-aos="fade-right">
+              <div class="w-full md:w-1/2" >
                   <p class="font-normal text-[20px] text-justify">"I was amazed by how well the suit turned out. Every detail was carefully considered, and the fit is perfect. It’s easily the best suit I’ve ever owned."</p>
                   <p class="mt-4 font-bold">— Arjun Mehta, Mumbai, India</p>
               </div>

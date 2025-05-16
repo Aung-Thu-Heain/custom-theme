@@ -5,8 +5,8 @@
   <div id="manswear-hero-section" class="w-auto relative  bg-cover bg-no-repeat" style="height: 601px;background-image: url('{{Vite::asset('resources/images/lookbook/banner.png')}}')">
     <div class="absolute inset-0 bg-black/70"></div>
       <div class="absolute inset-0 flex flex-col items-start text-white text-start p-20">
-          <p class=" mb-2 font-normal text-[24px] " data-aos="fade-left">Lookbook</p>
-          <h1 class="text-4xl font-bold mb-6 text-[48px] leading-[78px] "  data-aos="fade-right">Explore our curated collection of <br> bespoke creations, where <br> elegance meets individuality.</h1>
+          <p class=" mb-2 font-normal text-[16px] md:text-[24px] " data-aos="fade-left">Lookbook</p>
+          <h1 class="font-bold mb-6 text-[18px] md:text-[48px] leading-[78px] "  data-aos="fade-right">Explore our curated collection of <br> bespoke creations, where <br> elegance meets individuality.</h1>
       </div>
   </div>
 </section>
@@ -15,74 +15,75 @@
   <div class="bg-black text-white min-h-screen py-12 px-6 lg:px-24">
     <div class="flex items-center">
       <h2 class="text-gray-300 text-2xl font-serif mr-4 whitespace-nowrap">Seasonal Collection</h2>
-      <div class="flex-grow border-t border-gray-400"></div>
+      <div class="flex-grow border-t  ms-5"></div>
     </div>
 
-    <!-- Summer -->
-    <div class="grid lg:grid-cols-2 items-center gap-12 mb-24">
-      <img src="{{Vite::asset('resources/images/lookbook/collection-1.png')}}" alt="Summer Collection" class="rounded-md w-full max-w-md mx-auto lg:mx-0">
-      <div class="text-center lg:text-center">
-        <h3 class="text-2xl font-bold mb-2">SUMMER</h3>
-        <p class="bg-white text-black inline-block px-4 py-1 mb-4">Light fabrics, vibrant tone.</p>
-        <div class="flex justify-center lg:justify-center gap-2">
-          <span class="w-4 h-4 rounded-full bg-blue-200"></span>
-          <span class="w-4 h-4 rounded-full bg-green-200"></span>
-          <span class="w-4 h-4 rounded-full bg-yellow-200"></span>
-          <span class="w-4 h-4 rounded-full bg-pink-300"></span>
-          <span class="w-4 h-4 rounded-full bg-purple-300"></span>
-          <span class="w-4 h-4 rounded-full bg-orange-300"></span>
+    <div class="border-l p-20 mt-10">
+          <!-- Summer -->
+        <div class="grid lg:grid-cols-2 items-center gap-12 mb-24">
+          <img src="{{Vite::asset('resources/images/lookbook/collection-1.png')}}" alt="Summer Collection" class="rounded-md w-full max-w-md mx-auto lg:mx-0">
+          <div class="text-center lg:text-center">
+            <h3 class="text-[48px] font-bold mb-2">SUMMER</h3>
+            <p class="bg-white text-[16px] md:text-[30px] text-black inline-block  px-10 py-2 mb-4">Light fabrics, vibrant tone.</p>
+            <div class="flex justify-center lg:justify-center gap-5">
+              <span class="w-5 h-5 rounded-full bg-blue-200"></span>
+              <span class="w-5 h-5 rounded-full bg-green-200"></span>
+              <span class="w-5 h-5 rounded-full bg-yellow-200"></span>
+              <span class="w-5 h-5 rounded-full bg-pink-300"></span>
+              <span class="w-5 h-5 rounded-full bg-purple-300"></span>
+              <span class="w-5 h-5 rounded-full bg-orange-300"></span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- Autumn -->
-    <div class="grid lg:grid-cols-2 items-center gap-12 mb-24">
-      <div class="text-center lg:text-center order-2 lg:order-1">
-        <h3 class="text-2xl font-bold mb-2">AUTUMN</h3>
-        <p class="bg-white text-black inline-block px-4 py-1 mb-4">Rich textures, warm palettes.</p>
-        <div class="flex justify-center lg:justify-center gap-2">
-          <span class="w-4 h-4 rounded-full bg-red-700"></span>
-          <span class="w-4 h-4 rounded-full bg-orange-600"></span>
-          <span class="w-4 h-4 rounded-full bg-yellow-600"></span>
-          <span class="w-4 h-4 rounded-full bg-brown-600"></span>
-          <span class="w-4 h-4 rounded-full bg-green-700"></span>
-          <span class="w-4 h-4 rounded-full bg-gray-500"></span>
-        </div>
-      </div>
-      <img src="{{Vite::asset('resources/images/lookbook/collection-2.png')}}" alt="Autumn Collection" class="rounded-md w-full max-w-md mx-auto lg:mx-0 order-1 lg:order-2">
-    </div>
-
-    <!-- Formal Wear -->
-    <div class="grid lg:grid-cols-2 items-center gap-12">
-      <img src="{{Vite::asset('resources/images/lookbook/collection-3.png')}}" alt="Formal Wear Collection" class="rounded-md w-full max-w-md mx-auto lg:mx-0">
-      <div class="text-center lg:text-center">
-        <h3 class="text-2xl font-bold mb-2">FORMAL WEAR</h3>
-        <p class="bg-white text-black inline-block px-4 py-1 mb-4">Evening elegance and wedding attire.</p>
-        <div class="flex justify-center lg:justify-center gap-2">
-          <span class="w-4 h-4 rounded-full bg-gray-900"></span>
-          <span class="w-4 h-4 rounded-full bg-white border"></span>
-          <span class="w-4 h-4 rounded-full bg-navy-800"></span>
-          <span class="w-4 h-4 rounded-full bg-red-800"></span>
-          <span class="w-4 h-4 rounded-full bg-gold-600"></span>
-          <span class="w-4 h-4 rounded-full bg-maroon-700"></span>
-        </div>
-      </div>
-    </div>
-
         <!-- Autumn -->
-    <div class="grid lg:grid-cols-2 items-center gap-12 mb-24">
-      <div class="text-center lg:text-center order-2 lg:order-1">
-        <h3 class="text-2xl font-bold mb-2">CASUAL CHIC</h3>
-        <p class="bg-white text-black inline-block px-4 py-1 mb-4">Everyday sophistication.</p>
-        <div class="flex justify-center lg:justify-center gap-2">
-          <span class="w-4 h-4 rounded-full bg-red-700"></span>
-          <span class="w-4 h-4 rounded-full bg-orange-600"></span>
-          <span class="w-4 h-4 rounded-full bg-yellow-600"></span>
-          <span class="w-4 h-4 rounded-full bg-brown-600"></span>
-          <span class="w-4 h-4 rounded-full bg-green-700"></span>
-          <span class="w-4 h-4 rounded-full bg-gray-500"></span>
+        <div class="grid lg:grid-cols-2 items-center gap-12 mb-24">
+          <div class="text-center lg:text-center order-2 lg:order-1">
+            <h3 class="text-2xl font-bold mb-2">AUTUMN</h3>
+            <p class="bg-white text-black text-[16px] md:text-[30px] inline-block px-4 py-1 mb-4">Rich textures, warm palettes.</p>
+            <div class="flex justify-center lg:justify-center gap-5">
+              <span class="w-5 h-5 rounded-full bg-red-700"></span>
+              <span class="w-5 h-5 rounded-full bg-orange-600"></span>
+              <span class="w-5 h-5 rounded-full bg-yellow-600"></span>
+              <span class="w-5 h-5 rounded-full bg-gray-600"></span>
+              <span class="w-5 h-5 rounded-full bg-green-700"></span>
+              <span class="w-5 h-5 rounded-full bg-gray-500"></span>
+            </div>
+          </div>
+          <img src="{{Vite::asset('resources/images/lookbook/collection-2.png')}}" alt="Autumn Collection" class="rounded-md w-full max-w-md mx-auto lg:mx-0 order-1 lg:order-2">
         </div>
-      </div>
-      <img src="{{Vite::asset('resources/images/lookbook/collection-4.png')}}" alt="Autumn Collection" class="rounded-md w-full max-w-md mx-auto lg:mx-0 order-1 lg:order-2">
+
+        <!-- Formal Wear -->
+        <div class="grid lg:grid-cols-2 items-center gap-12">
+          <img src="{{Vite::asset('resources/images/lookbook/collection-3.png')}}" alt="Formal Wear Collection" class="rounded-md w-full max-w-md mx-auto lg:mx-0">
+          <div class="text-center lg:text-center">
+            <h3 class="text-2xl font-bold mb-2">FORMAL WEAR</h3>
+            <p class="bg-white text-[16px] md:text-[30px] text-black inline-block px-4 py-1 mb-4">Evening elegance and wedding attire.</p>
+            <div class="flex justify-center lg:justify-center gap-5">
+              <span class="w-5 h-5 rounded-full bg-gray-600"></span>
+              <span class="w-5 h-5 rounded-full bg-white border"></span>
+              <span class="w-5 h-5 rounded-full bg-yellow-200"></span>
+              <span class="w-5 h-5 rounded-full bg-red-800"></span>
+              <span class="w-5 h-5 rounded-full bg-green-700"></span>
+            </div>
+          </div>
+        </div>
+
+            <!-- Autumn -->
+        <div class="grid lg:grid-cols-2 items-center gap-12 mb-24">
+          <div class="text-center lg:text-center order-2 lg:order-1">
+            <h3 class="text-2xl font-bold mb-2">CASUAL CHIC</h3>
+            <p class="bg-white text-[16px] md:text-[30px] text-black inline-block px-4 py-1 mb-4">Everyday sophistication.</p>
+            <div class="flex justify-center lg:justify-center gap-5">
+              <span class="w-5 h-5 rounded-full bg-red-700"></span>
+              <span class="w-5 h-5 rounded-full bg-orange-600"></span>
+              <span class="w-5 h-5 rounded-full bg-yellow-600"></span>
+              <span class="w-5 h-5 rounded-full bg-gray-600"></span>
+              <span class="w-5 h-5 rounded-full bg-green-700"></span>
+              <span class="w-5 h-5 rounded-full bg-gray-500"></span>
+            </div>
+          </div>
+          <img src="{{Vite::asset('resources/images/lookbook/collection-4.png')}}" alt="Autumn Collection" class="rounded-md w-full max-w-md mx-auto lg:mx-0 order-1 lg:order-2">
+        </div>
     </div>
   </div>
 </section>

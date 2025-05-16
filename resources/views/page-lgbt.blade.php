@@ -38,7 +38,7 @@
     <h1 class="text-[30px] font-bold py-5 text-white" data-aos="fade-zoom-im">Authenticity in Every Thread</h1>
     <h1 class="text-[20px] text-white pb-12">Explore our gallery to see how style becomes a statement of pride.</h1>
 
-  <div class="max-w-6xl grid md:grid-cols-3  mx-auto px-4 gap-1">
+  <div class="max-w-6xl grid md:grid-cols-3 grid-cols-1  mx-auto px-4 gap-1">
     <div class=" min-h-[481px] row-span-2">
       <img src="{{Vite::asset('resources/images/lgbt/grid-1.png')}}" class="object-cover h-full w-full" alt="">
     </div>

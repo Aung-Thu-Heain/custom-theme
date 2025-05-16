@@ -17,7 +17,7 @@
       <img src="{{Vite::asset('resources/images/wedding/wedding-1.png')}}" alt="">
     </div>
     <div class="md:h-[765px] flex-col items-center text-start mx-2 md:mx-10 justify-center p-20">
-      <h2 class="text-[33px] leading-[58px] font-bold mb-4" data-aos="fade-right">Every Detail Should Reflect Your <br>Unique Love Story</h2>
+      <h2 class="md:text-[33px]  leading-[58px] font-bold mb-4" data-aos="fade-right">Every Detail Should Reflect Your <br>Unique Love Story</h2>
       <p class="text-[24px]  leading-[39px]" data-aos="fade-left">
         On your most memorable day, our bespoke wedding attire is crafted with precision and care, ensuring you walk down the aisle with confidence, elegance, and timeless style. From classic sophistication to modern romance, let us create a look as unforgettable as your journey together.
       </p>
@@ -38,7 +38,7 @@
     <h1 class="text-[30px] font-bold py-5 text-white" data-aos="fade-zoom-im">Moments Woven in Time</h1>
     <h1 class="text-[20px] text-white pb-12">Explore our gallery and see how timeless style meets heartfelt memories.</h1>
 
-  <div class="max-w-6xl grid md:grid-cols-3  mx-auto px-4 gap-1">
+  <div class="max-w-6xl grid md:grid-cols-3 grid-cols-1  mx-auto px-4 gap-1">
     <div class=" min-h-[481px] row-span-2">
       <img src="{{Vite::asset('resources/images/wedding/grid-1.png')}}" class="object-cover h-full w-full" alt="">
     </div>

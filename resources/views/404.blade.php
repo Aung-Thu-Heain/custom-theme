@@ -5,7 +5,7 @@
 
   @if (! have_posts())
     <x-alert type="warning">
-      {!! __('Sorry, but the page you are trying to view does not exist.', 'sage') !!}
+      {!! __('Not found') !!}
     </x-alert>
 
     {!! get_search_form(false) !!}

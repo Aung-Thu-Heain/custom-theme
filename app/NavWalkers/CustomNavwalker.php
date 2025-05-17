@@ -29,11 +29,11 @@ class CustomNavwalker extends \Walker_Nav_Menu
             $output .= '</button>';
 
             // OPEN the dropdown wrapper + UL early
-            $output .= "<div id=\"$dropdown_id\" class=\"z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600\">\n";
+            $output .= "<div id=\"$dropdown_id\" class=\"z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-100 md:w-44 dark:bg-gray-700 dark:divide-gray-600\">\n";
             $output .= '<ul class="py-2 text-sm text-gray-700 dark:text-gray-400">' . "\n";
         } else {
             $output .= '<li>';
-            $output .= '<a href="' . esc_url($item->url) . '" class="block px-4 py-2  hover:text-yellow-400">';
+            $output .= '<a href="' . esc_url($item->url) . '" class="block px-4 py-2  active:text-yellow-400 hover:text-yellow-400">';
             $output .= esc_html($item->title);
             $output .= '</a>';
         }

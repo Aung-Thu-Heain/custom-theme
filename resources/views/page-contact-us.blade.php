@@ -12,7 +12,7 @@
 </section>
 
 <section class="main">
-  <div class="bg-black text-white min-h-screen flex flex-col md:flex-row p-[50px] pb-20">
+  <div class="bg-black text-white min-h-screen flex flex-col md:flex-row p-5 md:p-[50px] pb-20">
     <!-- Left Section -->
     <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10 space-y-6 bg-secondary p-[50px]">
       <div class="space-y-4">
@@ -37,9 +37,9 @@
     </div>
 
     <!-- Right Section -->
-    <div class="md:w-1/2 bg-primary p-[50px]" >
+    <div class="md:w-1/2 bg-primary md:p-[50px] p-5" >
       <h2 class="text-[20px] text-center font-semibold mb-6">Book an Appointment</h2>
-      <form class="space-y-4 px-20">
+      <form class="space-y-4 px-5 md:px-20">
         <div>
           <label class="text-[16px]">Full Name</label>
           <input type="text" placeholder="eg: John Doe" class="w-full h-[50px] bg-[#02021E] border border-gray-500 rounded px-3 py-2 mt-1 text-sm focus:outline-none">
@@ -88,16 +88,7 @@
 <section class="map">
   <div class="bg-[#02021E] min-h-screen flex items-center justify-center p-2">
     <div class="w-full max-w-7xl rounded overflow-hidden">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8737323740765!2d-73.8604035241354!3d40.7177980713869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f15d780cf5d%3A0x90f00a5ccba84904!2sForest%20Hills%2C%20Queens%2C%20NY!5e0!3m2!1sen!2sus!4v1683977826610!5m2!1sen!2sus"
-        width="100%"
-        height="500"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        class="w-full h-[500px] rounded shadow-md">
-      </iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.7183820702785!2d100.52007317533244!3d13.735492386654707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f24afac7879%3A0x83211fc6c6d74a3f!2sICON%20TAILOR%20HOUSE!5e0!3m2!1sen!2smm!4v1747498563058!5m2!1sen!2smm" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>

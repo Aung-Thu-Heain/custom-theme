@@ -52,17 +52,17 @@
 <section class="why-bespoke">
   <div class="bg-primary text-white p-5">
     <div class="max-w-6xl mx-auto px-6 pt-20">
-      <h2 class="text-3xl font-bold text-[40px]" data-aos="fade-right">Why Bespoke?</h2>
+      <h2 class="text-3xl font-bold text-[40px]">Why Bespoke?</h2>
     </div>
     <div class="max-w-6xl  mx-auto px-6  py-14 grid grid-cols-1 md:grid-cols-2 gap-12 ">
-        <div data-aos="fade-right">
+        <div >
             <h3 class="text-2xl font-semibold mt-4 text-[36px]">Tailoring Beyond Measure</h3>
             <p class="mt-4 font-normal text-gray-300 text-[20px] text-justify">
                 A bespoke suit is more than just clothing—it's an extension of your personality. Unlike off-the-rack options, our custom-tailored suits are crafted to complement your unique physique, style, and preferences, ensuring the perfect fit for every occasion.
             </p>
         </div>
 
-        <div class="relative" data-aos="fade-left">
+        <div class="relative" >
             <img src="{{Vite::asset('resources/images/home/why-bespoke.png')}}" alt="Bespoke Suit" class="rounded-lg shadow-lg">
         </div>
     </div>

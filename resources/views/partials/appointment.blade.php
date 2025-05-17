@@ -4,7 +4,7 @@
       <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6">
           <p class="text-[36px] font-bold mb-2" data-aos="zoom-in">Your Perfect Suit Starts Here!</p>
           <h1 class="font-normal text-[18px] mb-2" data-aos="zoom-out"> Let us craft your signature style. Schedule your fitting today.</h1>
-          <a href="#" class="bg-white text-black mt-14 px-8 py-4  rounded-lg font-normal text-[16px] hover:bg-gray-200 transition" data-aos="flip-left">
+          <a href="/contact-us" class="bg-white text-black mt-14 px-8 py-4  rounded-lg font-normal text-[16px] hover:bg-gray-200 transition" data-aos="flip-left">
             Book An Appointment
           </a>
       </div>

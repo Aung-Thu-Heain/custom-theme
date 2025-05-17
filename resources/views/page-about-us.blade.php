@@ -20,16 +20,17 @@
 <section class="mastery">
   <div class="grid grid-cols-1 md:grid-cols-9 mt-5 p-20">
     <div class="col-span-5">
-      <p class="text-[36px] font-bold" data-aos="fade-left">Mastery</p>
-      <p class="text-[36px]" data-aos="fade-right">in Craftsmanship</p>
+      <p class="text-[36px] font-bold" >Mastery</p>
+      <p class="text-[36px]" >in Craftsmanship</p>
     </div>
     <div class="col-span-4">
-      <p class="text-[24px]" data-aos="fade-left">Our expertise is not just about creating clothing; it’s about crafting an experience that leaves you feeling confident, comfortable, and unique.</p>
+      <p class="text-[24px]" >Our expertise is not just about creating clothing; it’s about crafting an experience that leaves you feeling confident, comfortable, and unique.</p>
     </div>
   </div>
+
   <div class="grid grid-cols-1 md:grid-cols-9 md:p-20 justify-items-stretch">
     <div class="col-span-5 py-20 ps-5">
-      <div class="grid grid-cols-2 justify-items-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
         <div class="text-start  w-100 h-40" data-aos="zoom-in">
           <span class="text-[36px] font-bold">10+</span><br>
           <span class="text-[24px]">Years of Expertise</span>
@@ -39,7 +40,7 @@
           <span class="text-[24px]">Satisfied Clients</span>
         </div>
       </div>
-      <div class="grid grid-cols-2 justify-items-center ">
+      <div class="grid grid-cols-1 md:grid-cols-2 mt-10 justify-items-center ">
         <div class="text-start  w-100 h-40" data-aos="zoom-in"">
           <span class="text-[36px] font-bold">98%</span><br>
           <span class="text-[24px]">Client Satisfaction</span>
@@ -50,9 +51,10 @@
         </div>
       </div>
     </div>
-    <div id="mastery-image" style="background-image: url('{{Vite::asset('resources/images/about/mastery.png')}}')" class="col-span-4 bg-cover bg-no-repeat bg-center h-[455px]" data-aos="zoom-out"></div>
+    <div id="mastery-image" style="background-image: url('{{Vite::asset('resources/images/about/mastery.png')}}')" class="col-span-4 bg-cover bg-no-repeat bg-center h-[455px]" data-aos="zoom-out">
+    </div>
   </div>
-  </div>
+
 </section>
 
 <section class="our-team ">

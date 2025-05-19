@@ -16,7 +16,7 @@
     <div class="md:h-[765px]" data-aos="zoom-in">
       <img src="{{Vite::asset('resources/images/lgbt/lgbt-1.png')}}" alt="">
     </div>
-    <div class="md:h-[765px] flex-col items-center text-start mx-2 md:mx-10 justify-center p-20">
+    <div class="md:h-[765px] flex-col items-center text-start mx-2 md:mx-10 justify-center p-5 md:p-20">
       <h2 class="text-[33px] leading-[58px] font-bold mb-4" data-aos="fade-right">Your style is as unique as your <br>journey</h2>
       <p class="text-[24px]  leading-[39px]" data-aos="fade-left">
         Our bespoke tailoring celebrates individuality, diversity, and self-expression — crafting garments that reflect who you are, with confidence and pride. From bold statements to timeless classics, we create looks tailored to fit you, not the other way around.

@@ -16,7 +16,7 @@
     <div class="md:h-[765px]" data-aos="zoom-in">
       <img src="{{Vite::asset('resources/images/manswear/Rectangle-1.png')}}" alt="">
     </div>
-    <div class="md:h-[765px] flex-col items-center text-start mx-2 md:mx-10 justify-center p-20">
+    <div class="md:h-[765px] flex-col items-center text-start mx-2 md:mx-10 justify-center p-5 md:p-20">
       <h2 class="text-[36px] leading-[58px] font-bold mb-4" data-aos="fade-right">Every Man Deserves<br>
         A Suit That Tells His Story</h2>
       <p class="text-[24px]  leading-[39px]" data-aos="fade-left">

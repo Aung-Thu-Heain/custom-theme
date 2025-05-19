@@ -6,7 +6,7 @@
     <div class="absolute inset-0 bg-black/70"></div>
       <div class="absolute inset-0 flex flex-col items-start text-white text-start p-20">
           <p class=" mb-2 font-normal text-[16px] md:text-[24px] " data-aos="fade-left">Lookbook</p>
-          <h1 class="font-bold mb-6 text-[18px] md:text-[48px] leading-[78px] "  data-aos="fade-right">Explore our curated collection of <br> bespoke creations, where <br> elegance meets individuality.</h1>
+          <h1 class="font-bold mb-6 text-[28px] md:text-[48px] leading-[78px] "  data-aos="fade-right">Explore our curated collection of <br> bespoke creations, where <br> elegance meets individuality.</h1>
       </div>
   </div>
 </section>
@@ -18,7 +18,7 @@
       <div class="flex-grow border-t  ms-5"></div>
     </div>
 
-    <div class="border-l p-20 mt-10">
+    <div class="border-l p-5 md:p-20 mt-10">
           <!-- Summer -->
         <div class="grid lg:grid-cols-2 items-center gap-12 mb-24">
           <img src="{{Vite::asset('resources/images/lookbook/collection-1.png')}}" alt="Summer Collection" class="rounded-md w-full max-w-md mx-auto lg:mx-0">

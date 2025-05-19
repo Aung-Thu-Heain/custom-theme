@@ -16,8 +16,8 @@
     <div class="md:h-[765px]" data-aos="zoom-in">
       <img src="{{Vite::asset('resources/images/wedding/wedding-1.png')}}" alt="">
     </div>
-    <div class="md:h-[765px] flex-col items-center text-start mx-2 md:mx-10 justify-center p-20">
-      <h2 class="md:text-[33px]  leading-[58px] font-bold mb-4" data-aos="fade-right">Every Detail Should Reflect Your <br>Unique Love Story</h2>
+    <div class="md:h-[765px] flex-col items-center text-start mx-2 md:mx-10 justify-center p-5 md:p-20">
+      <h2 class="text-[33px]  leading-[58px] font-bold mb-4" data-aos="fade-right">Every Detail Should Reflect Your <br>Unique Love Story</h2>
       <p class="text-[24px]  leading-[39px]" data-aos="fade-left">
         On your most memorable day, our bespoke wedding attire is crafted with precision and care, ensuring you walk down the aisle with confidence, elegance, and timeless style. From classic sophistication to modern romance, let us create a look as unforgettable as your journey together.
       </p>

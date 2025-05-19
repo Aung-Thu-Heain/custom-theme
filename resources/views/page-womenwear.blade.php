@@ -16,7 +16,7 @@
     <div class="md:h-[765px]" data-aos="zoom-in">
       <img src="{{Vite::asset('resources/images/womenwear/one.png')}}" alt="">
     </div>
-    <div class="md:h-[765px] flex-col items-center text-start mx-2 md:mx-10 justify-center p-20">
+    <div class="md:h-[765px] flex-col items-center text-start mx-2 md:mx-10 justify-center p-5 md:p-20">
       <h2 class="text-[36px] leading-[56px] font-bold mb-4" data-aos="fade-right">A Garment as Strong, Graceful, and Unique as She Is</h2>
       <p class="text-[24px]  leading-[39px]" data-aos="fade-left">
         Our bespoke womenswear is crafted with meticulous attention to detail, blending luxurious fabrics with flawless tailoring to create pieces that move effortlessly with you. From power suits to evening wear, discover elegance designed exclusively for you.

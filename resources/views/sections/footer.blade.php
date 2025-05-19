@@ -18,31 +18,29 @@
               <!-- Navigation -->
               <div class="md:ms-20" >
                   <h3 class="font-bold text-[18px] mb-4">Navigation</h3>
-                  <ul class="space-y-2 text-[18px] font-normal">
-                      <li><a href="#" class="hover:text-yellow-400">About</a></li>
-                      <li><a href="#" class="hover:text-yellow-400">Services</a></li>
-                      <li><a href="#" class="hover:text-yellow-400">Explore</a></li>
-                      <li><a href="#" class="hover:text-yellow-400">Contact Us</a></li>
+                  <ul class="space-y-2 text-[16px] font-normal">
+                      <li><a href="/about-us" class="hover:text-yellow-400">About</a></li>
+                      <li><a href="/contact-us" class="hover:text-yellow-400">Contact Us</a></li>
                   </ul>
               </div>
 
               <!-- Quick Links -->
               <div >
                   <h3 class="font-bold text-[18px] mb-4">Quick Links</h3>
-                  <ul class="space-y-2 text-[18px] font-normal">
-                      <li><a href="#" class="hover:text-yellow-400">Fabrics</a></li>
-                      <li><a href="#" class="hover:text-yellow-400">Lookbook</a></li>
-                      <li><a href="#" class="hover:text-yellow-400">Manswear</a></li>
-                      <li><a href="#" class="hover:text-yellow-400">Womenwear</a></li>
-                      <li><a href="#" class="hover:text-yellow-400">Wedding</a></li>
-                      <li><a href="#" class="hover:text-yellow-400">LGBTQ</a></li>
+                  <ul class="space-y-2 text-[16px] font-normal">
+                      <li><a href="/fabrics" class="hover:text-yellow-400">Fabrics</a></li>
+                      <li><a href="/lookbook" class="hover:text-yellow-400">Lookbook</a></li>
+                      <li><a href="/manswear" class="hover:text-yellow-400">Manswear</a></li>
+                      <li><a href="/womenwear" class="hover:text-yellow-400">Womenwear</a></li>
+                      <li><a href="/wedding" class="hover:text-yellow-400">Wedding</a></li>
+                      <li><a href="lgbt" class="hover:text-yellow-400">LGBTQ</a></li>
                   </ul>
               </div>
 
               <!-- Information -->
               <div >
                   <h3 class="font-bold text-[18px] mb-4">Information</h3>
-                  <ul class="space-y-2 text-[18px] font-normal">
+                  <ul class="space-y-2 text-[16px] font-normal">
                       <li class="flex items-center gap-2"><img src="{{Vite::asset('resources/images/icons/ri-time-line.png')}}" class="w-5"> Everyday 9:15 AM - 9:30 PM</li>
                       <li class="flex items-center gap-2"><img src="{{Vite::asset('resources/images/icons/ri-phone-line.png')}}" class="w-5"> 0897875470</li>
                       <li class="flex items-center gap-2"><img src="{{Vite::asset('resources/images/icons/ri-mail-line.png')}}" class="w-5"> icontailorhouse@gmail.com</li>

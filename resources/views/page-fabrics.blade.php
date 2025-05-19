@@ -6,7 +6,7 @@
     {{-- <div class="absolute inset-0 bg-black/70"></div> --}}
       <div class="absolute inset-0 flex flex-col items-start text-white text-start p-20">
           <p class=" mb-2 font-normal text-[24px] " data-aos="fade-left">Fabrics</p>
-          <h1 class="text-4xl font-bold mb-6 text-[25px] md:text-[48px] leading-[78px] "  data-aos="fade-right">Crafted from The Finest <br>Threads.</h1>
+          <h1 class=" font-bold mb-6 text-[34px] md:text-[48px] leading-[78px] "  data-aos="fade-right">Crafted from The Finest <br>Threads.</h1>
       </div>
   </div>
 </section>

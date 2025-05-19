@@ -9,7 +9,7 @@
         <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6">
             <p class=" mb-2 font-normal text-[24px] " data-aos="fade-left">With Bangkok’s Finest Bespoke Tailoring,</p>
             <h1 class="text-4xl font-bold mb-6 text-[48px] "  data-aos="fade-right">Experience True Luxury.</h1>
-            <a href="#"  data-aos="fade-up" class="bg-white text-black mt-6 px-10 py-4 rounded-lg font-normal text-[16px] hover:bg-gray-200 transition ">
+            <a href="/manswear"  data-aos="fade-up" class="bg-white text-black mt-6 px-10 py-4 rounded-lg font-normal text-[16px] hover:bg-gray-200 transition ">
               Explore Our Collection
             </a>
         </div>
@@ -41,9 +41,9 @@
                     </div>
 
                 </button>
-                <div data-aos="fade-left" class="absolute   bottom-0 text-white flex  p-4">
+                <a href="/about-us" data-aos="fade-left" class="absolute   bottom-0 text-white flex  p-4">
                   Discover Our Story <img src="{{Vite::asset('resources/images/home/arrow-right-line.png')}}" class="ml-2" alt="">
-                </div>
+                </a>
             </div>
         </div>
     </div>

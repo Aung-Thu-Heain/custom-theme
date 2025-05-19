@@ -10,15 +10,26 @@
   --color-secondary: #02021E;
   --color-hover: #000000;
   --color-wedding: #02021E;
-  --font-inter:"Inter", sans-serif;
 }
 
 body{
-  font-family: "Inter";
+  font-family: 'Times New Roman', Times, serif;
 }
 
 a{
   text-decoration: none;
+}
+
+.contact_bg{
+  background-color: #02021E;
+}
+
+.contact_height{
+  height: 50px;
+}
+
+.country-list{
+  color: black;
 }
 
 /* home page css  */

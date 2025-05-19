@@ -39,48 +39,8 @@
     <!-- Right Section -->
     <div class="md:w-1/2 bg-primary md:p-[50px] p-5" >
       <h2 class="text-[20px] text-center font-semibold mb-6">Book an Appointment</h2>
-      <form class="space-y-4 px-5 md:px-20">
-        <div>
-          <label class="text-[16px]">Full Name</label>
-          <input type="text" placeholder="eg: John Doe" class="w-full h-[50px] bg-[#02021E] border border-gray-500 rounded px-3 py-2 mt-1 text-sm focus:outline-none">
-        </div>
-        <div>
-          <label class="text-[16px]">Email</label>
-          <input type="email" placeholder="eg: john214@gmail.com" class="w-full h-[50px] bg-[#02021E]  border border-gray-500 rounded px-3 py-2 mt-1 text-sm focus:outline-none">
-        </div>
-        <div>
-          <label class="text-[16px]">Phone Number</label>
-          <div class="flex">
-            <select class="bg-transparent h-[50px] bg-[#02021E] border border-gray-500 rounded-l px-3 py-2 text-sm">
-              <option>+95</option>
-            </select>
-            <input type="text" placeholder="543210987" class="w-full h-[50px] bg-[#02021E] border border-l-0 border-gray-500 rounded-r px-3 py-2 text-sm focus:outline-none">
-          </div>
-        </div>
-        <div>
-          <label class="text-[16px]">Service Preferences</label>
-          <select class="w-full h-[50px] bg-[#02021E] border border-gray-500 rounded px-3 py-2 mt-1 text-sm focus:outline-none">
-            <option>Select</option>
-          </select>
-        </div>
-        <div>
-          <label class="text-[16px]">Appointment Date</label>
-          <input type="date" class="w-full h-[50px] bg-[#02021E] border border-gray-500 rounded px-3 py-2 mt-1 text-sm focus:outline-none">
-        </div>
-        <div>
-          <label class="text-[16px] block mb-1">Location</label>
-          <div class="flex gap-6 text-sm">
-            <label class="inline-flex items-center">
-              <input type="radio" name="location" class=" text-[16px]  form-radio  mr-2"> In-store
-            </label>
-            <label class="inline-flex items-center">
-              <input type="radio" name="location" class="form-radio text-[16px]  mr-2"> Virtual
-            </label>
-          </div>
-        </div>
-        <p class="text-xs text-gray-400">By submitting the form you are agreed to our terms and privacy policy.</p>
-        <button type="submit" class="bg-white text-black px-6 py-2 rounded font-medium">Book An Appointment</button>
-      </form>
+      <?php echo do_shortcode('[contact-form-7 id="e9d0f9f" title="Contact form 1"]') ?>
+
     </div>
   </div>
 </section>
@@ -93,3 +53,8 @@
   </div>
 </section>
 @endsection
+
+
+
+
+

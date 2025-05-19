@@ -18,18 +18,18 @@
 </section>
 
 <section class="mastery">
-  <div class="grid grid-cols-1 md:grid-cols-9 mt-5 p-20">
+  <div class="grid grid-cols-1 md:grid-cols-9 mt-5 p-10 md:p-20">
     <div class="col-span-5">
       <p class="text-[36px] font-bold" >Mastery</p>
-      <p class="text-[36px]" >in Craftsmanship</p>
+      <p class=" text-[32px] md:text-[36px]" >in Craftsmanship</p>
     </div>
     <div class="col-span-4">
       <p class="text-[24px]" >Our expertise is not just about creating clothing; it’s about crafting an experience that leaves you feeling confident, comfortable, and unique.</p>
     </div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-9 md:p-20 justify-items-stretch">
-    <div class="col-span-5 py-20 ps-5">
+  <div class="grid grid-cols-1 md:grid-cols-9  md:p-20 justify-items-stretch">
+    <div class="col-span-5 md:py-20 ps-10">
       <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
         <div class="text-start  w-100 h-40" data-aos="zoom-in">
           <span class="text-[36px] font-bold">10+</span><br>

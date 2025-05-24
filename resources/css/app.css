@@ -15,6 +15,48 @@
 body{
   font-family: 'Times New Roman', Times, serif;
 }
+#main{
+  margin-top: 89px;
+}
+
+.holographic-card {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 1.5s ease;
+}
+
+/* .holographic-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 230%;
+  height: 230%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 20%,
+    rgba(9, 72, 167, 0.7)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.7s ease;
+  opacity: 0;
+} */
+
+.holographic-card img {
+  transition: transform 1s ease;
+}
+.holographic-card img:hover {
+  transform: scale(1.2);
+}
+
+/* .holographic-card:hover::before {
+  opacity: 1;
+  transition: all 0.7s ease;
+  transform: rotate(-45deg) translateY(100%);
+} */
 
 a{
   text-decoration: none;

@@ -18,7 +18,7 @@
 
 <section class="about-our-craft">
     <div class="bg-gray-100">
-        <div class="max-w-6xl mx-auto text-center py-28  px-4">
+        <div class="max-w-6xl mx-auto text-center py-20  px-4">
             <div class="flex items-center justify-center bg-gray-100 py-4">
               <div class="border-t border-black w-1/10"></div>
               <span class="mx-6 text-black  text-[20px] " >The Art of Bespoke Tailoring</span>
@@ -32,16 +32,17 @@
             </p>
         </div>
         <div class=" max-w-6xl mx-auto px-4  pb-26 " data-aos="zoom-in-up">
-            <div class="relative flex justify-center">
+            <div class="relative flex justify-center responsiveIframe">
                 <div class="absolute inset-0 bg-black/60"></div>
-                <img src="{{Vite::asset('resources/images/home/about-craft.png')}}" alt="Tailoring Process" class="object-cover rounded w-full max-h-[543px] shadow-lg">
-                <button class="absolute inset-0 flex items-center justify-center">
+                {{-- <img src="{{Vite::asset('resources/images/home/about-craft.png')}}" alt="Tailoring Process" class="object-cover rounded w-full max-h-[543px] shadow-lg"> --}}
+
+                 <iframe class="w-full h-auto md:min-h-[630px]"  src="https://www.youtube.com/embed/qXbWq1_gWNg?si=rdnTf7Fg4w2zpRfr&amp;controls=0&autoplay=1&mute=1&showinfo=0&amp;autohide=1&amp;rel=0&amp;hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width:100%;height:100%;"></iframe>
+                {{-- <button class="absolute inset-0 flex items-center justify-center">
                     <div data-aos="fade-right" class="bg-black bg-opacity-70 rounded-full w-24 h-24 flex items-center justify-center">
                         <img src="{{Vite::asset('resources/images/home/play.png')}}" alt="">
                     </div>
-
-                </button>
-                <a href="/about-us" data-aos="fade-left" class="absolute   bottom-0 text-white flex  p-4">
+                </button> --}}
+                <a href="/about-us" data-aos="fade-left" class="absolute  rounded-2xl hover:bg-primary  bottom-0 text-white flex p-4 mb-2">
                   Discover Our Story <img src="{{Vite::asset('resources/images/home/arrow-right-line.png')}}" class="ml-2" alt="">
                 </a>
             </div>
@@ -79,44 +80,51 @@
             Services
           </h2>
         </div>
-        <div class="md:row-span-2 max-h-[800px] " data-aos="fade-right">
-          <img src="{{Vite::asset('resources/images/home/signature-two.png')}}" class="h-full object-cover" alt="">
+        <div class="md:row-span-2 min-h-[800px] holographic-card" data-aos="fade-right">
+          <a href="/manswear">
+            <img src="{{Vite::asset('resources/images/home/signature-two.png')}}" class="h-full object-cover" alt="">
+          </a>
         </div>
-        <div class="md:row-span-2 max-h-[800px] " data-aos="fade-left">
-          <img src="{{Vite::asset('resources/images/home/signature-three.png')}}" class="h-full object-cover" alt="">
+        <div class="md:row-span-2 min-h-[800px] holographic-card" data-aos="fade-left">
+          <a href="/womenswear">
+            <img src="{{Vite::asset('resources/images/home/signature-three.png')}}" class="h-full object-cover" alt="">
+          </a>
         </div>
-        <div class="md:row-span-2 max-h-[929px]" data-aos="fade-up">
-          <img src="{{Vite::asset('resources/images/home/signature-one.png')}}" class="object-cover h-full w-full" alt="">
+        <div class="md:row-span-2 min-h-[929px] holographic-card" data-aos="fade-up">
+          <a href="/lgbt">
+            <img src="{{Vite::asset('resources/images/home/signature-one.png')}}" class="object-cover h-full w-full" alt="">
+          </a>
         </div>
 
-        <div class="md:col-span-2 " data-aos="fade-left">
-          <img src="{{Vite::asset('resources/images/home/signature-four.png')}}"  class="object-cover h-full"  alt="">
+        <div class="md:col-span-2 holographic-card" data-aos="fade-left">
+         <a href="/wedding">
+            <img src="{{Vite::asset('resources/images/home/signature-four.png')}}"  class="object-cover h-full"  alt="">
+         </a>
         </div>
-
-
       </div>
    </div>
 </section>
+
 
 <section class="createion">
   <div class="bg-white py-12 text-center">
     <h1 class="text-[30px] font-bold py-12" data-aos="fade-zoom-im">“Let our designs inspire your next bespoke creation.”</h1>
     <div class="max-w-6xl grid   md:grid-cols-2 md:grid-rows-2 mx-auto px-4 gap-1">
         <div data-aos="fade-up">
-          <div class="grid grid-cols-3 gap-1">
+          <div class="grid grid-cols-3 gap-1  holographic-card">
              <img src="{{Vite::asset('resources/images/home/creation1.png')}}" class="object-cover h-full w-full" alt="">
              <img src="{{Vite::asset('resources/images/home/creation2.png')}}" class="object-cover h-full w-full" alt="">
              <img src="{{Vite::asset('resources/images/home/creation3.png')}}" class="object-cover h-full w-full" alt="">
           </div>
         </div>
-        <div class="row-span-2  max-h-[390px]" data-aos="fade-down">
+        <div class="row-span-2  max-h-[390px] holographic-card" data-aos="fade-down">
           <img src="{{Vite::asset('resources/images/home/creation4.png')}}" class="object-cover h-full w-full" alt="">
         </div>
-        <div class="row-span-2 " data-aos="fade-right">
+        <div class="row-span-2 holographic-card" data-aos="fade-right">
           <img src="{{Vite::asset('resources/images/home/creation5.png')}}" class="object-cover h-full w-full" alt="">
         </div>
         <div class="">
-          <div class="grid grid-cols-2 gap-1" data-aos="fade-left">
+          <div class="grid grid-cols-2 gap-1 holographic-card" data-aos="fade-left">
             <img src="{{Vite::asset('resources/images/home/creation6.png')}}" class="object-cover h-full w-full" alt="">
             <img src="{{Vite::asset('resources/images/home/creation7.png')}}" class="object-cover h-full w-full" alt="">
          </div>

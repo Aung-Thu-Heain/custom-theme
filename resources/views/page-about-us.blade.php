@@ -173,7 +173,7 @@
 
       <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 border-b-black border-b-3 text-start"  data-aos="fade-down">
         <div class="text-[40px] font-bold my-3 " data-aos="fade-down">2</div>
-        <h3 class="text-lg font-semibold mb-2 text-[24px]" data-aos="fade-right">Fabric & Style Selection</h3>
+        <h3 class="text-lg font-semibold mb-2 text-[24px]" data-aos="fade-right">Fabric & Style </h3>
         <p class="text-sm text-[16px] leading-[26px]" data-aos="fade-right">
           Work with our experts to choose premium fabrics and styles that best reflect your personality and preferences.
         </p>

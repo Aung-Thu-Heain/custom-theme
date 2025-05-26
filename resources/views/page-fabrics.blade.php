@@ -29,168 +29,41 @@
   <div class="flex-1 px-6 pt-10 pb-5 md:px-[50px] md:pt-[100px] md:pb-[20px]" id="default-tab-content">
        @php
           $images = [
-            'tab1' => [
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-1.png')],
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-2.png')],
+            'wool' => [
+              ['src' => Vite::asset('resources/images/fabrics/fabrics-1.png'),'caption' => '#elegante3'],
+              ['src' => Vite::asset('resources/images/fabrics/fabrics-2.png'),'caption' => '#elegante3'],
             ],
-            'tab2' => [
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-3.png')],
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-4.png')],
+            'silk' => [
+              ['src' => Vite::asset('resources/images/fabrics/fabrics-3.png'),'caption' => '#elegante3'],
+              ['src' => Vite::asset('resources/images/fabrics/fabrics-4.png'),'caption' => '#elegante3'],
+            ],
+            'linen' => [
+              ['src' => Vite::asset('resources/images/fabrics/fabrics-5.png'),'caption' => '#elegante3'],
+              ['src' => Vite::asset('resources/images/fabrics/fabrics-6.png'),'caption' => '#elegante3'],
+            ],
+            'heritage' => [
+              ['src' => Vite::asset('resources/images/fabrics/fabrics-1.png'),'caption' => '#elegante3'],
+              ['src' => Vite::asset('resources/images/fabrics/fabrics-2.png'),'caption' => '#elegante3'],
+            ],
+            'coat' => [
+              ['src' => Vite::asset('resources/images/fabrics/fabrics-3.png'),'caption' => '#elegante3'],
+              ['src' => Vite::asset('resources/images/fabrics/fabrics-4.png'),'caption' => '#elegante3'],
             ],
           ];
        @endphp
-       <div class="hidden" id="wool" role="tabpanel" aria-labelledby="wool-tab">
-         <div class="grid grid-cols-2 md:grid-cols-6 gap-4 ">
-            <div class="relative">
-              <img class="h-[145px] w-full"  src="{{Vite::asset('resources/images/fabrics/fabrics-1.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-2.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-3.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-4.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-5.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-6.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-1.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-2.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-3.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-4.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-5.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-6.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-1.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-2.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-3.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-4.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-5.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-6.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-1.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-2.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-3.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-4.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-5.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-6.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
+
+       @foreach($images as $key => $imageGroup)
+          <div class="hidden" id="{{$key}}" role="tabpanel" aria-labelledby="wool-tab">
+              <div class="grid grid-cols-2 md:grid-cols-6 gap-4 ">
+                @foreach ($images[$key] as $image)
+                    <div class="relative">
+                      <img class="h-[145px] w-full object-cover rounded-lg" onclick="openModal({{ $loop->index }}, '{{ $key }}')" src="{{$image['src']}}" alt="">
+                      <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">{{$image['caption']}}</div>
+                    </div>
+                @endforeach
+              </div>
           </div>
-       </div>
-       <div class="hidden " id="silk" role="tabpanel" aria-labelledby="silk-tab">
-         <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
-           <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-1.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-2.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-3.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-          </div>
-       </div>
-        <div class="hidden " id="linen" role="tabpanel" aria-labelledby="silk-tab">
-          <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
-           <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-1.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-2.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-            <div class="relative">
-              <img class="h-[145px] w-full object-cover rounded-lg" src="{{Vite::asset('resources/images/fabrics/fabrics-3.png')}}" alt="">
-              <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-            </div>
-          </div>
-       </div>
-        <div class="hidden " id="heritage" role="tabpanel" aria-labelledby="silk-tab">
-          <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
-            @foreach ($images['tab1'] as $image)
-                <div class="relative">
-                  <img class="h-[145px] w-full object-cover rounded-lg" onclick="openModal({{$loop->index}},'tab1')" src="{{$image['src']}}" alt="">
-                  <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-                </div>
-            @endforeach
-          </div>
-       </div>
-        <div class="hidden " id="coat" role="tabpanel" aria-labelledby="silk-tab">
-          <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
-            @foreach ($images['tab2'] as $image)
-                <div class="relative">
-                  <img class="h-[145px] w-full object-cover rounded-lg" onclick="openModal({{$loop->index}},'tab2')" src="{{$image['src']}}" alt="">
-                  <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">#elegante3</div>
-                </div>
-            @endforeach
-          </div>
-       </div>
+       @endforeach
   </div>
 </div>
 </section>
@@ -199,10 +72,10 @@
 <div id="imageModal" class="fixed inset-0  bg-opacity-20 flex items-center justify-center z-50 hidden">
   <div class="relative w-full max-w-4xl mx-auto bg-white rounded-lg overflow-hidden">
 
-    <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-600 hover:text-red-600 text-2xl z-100 font-bold">&times;</button>
+    <button onclick="closeModal()" class="absolute bg-primary px-2 rounded-4xl top-2 right-2 text-white hover:text-red-600 text-2xl z-100 font-bold">&times;</button>
 
     <div class="relative">
-      <img id="sliderImage" src="" alt="Image Preview" class="w-full h-[500px] object-cover rounded-t-lg transition duration-500 ease-in-out">
+      <img id="sliderImage" src="" alt="Image Preview" class="w-full h-[300px] md:h-[500px] object-cover rounded-t-lg transition duration-500 ease-in-out">
 
       <button onclick="prevImage()" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded hover:bg-opacity-75">
         &#10094;
@@ -212,7 +85,7 @@
         &#10095;
       </button>
     </div>
-    <div id="sliderCaption" class="text-center py-4 text-gray-700 font-medium"></div>
+    <div id="sliderCaption" class="text-center py-1 text-gray-700 font-medium"></div>
   </div>
 </div>
 
@@ -223,6 +96,8 @@
   function openModal(index = 0,position) {
     currentIndex = index;
     currentTabImages = images[position];
+    console.log('position',position);
+    console.log('current img',currentTabImages);
     updateSlider();
     document.getElementById('imageModal').classList.remove('hidden');
   }

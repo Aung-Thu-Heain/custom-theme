@@ -62,150 +62,150 @@
         <div id="default-tab-content">
           <div class="hidden" id="suit" role="tabpanel" aria-labelledby="suit-tab">
               <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                     <img src="{{Vite::asset('resources/images/womenwear/signature-1.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-2.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/womenwear/signature-3.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-4.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-5.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-6.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-7.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-8.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-9.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-10.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-11.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                     <img src="{{Vite::asset('resources/images/womenwear/signature-12.png')}}" class="object-cover w-auto h-auto" alt="">
                 </div>
               </div>
           </div>
           <div class="hidden" id="blouse" role="tabpanel" aria-labelledby="blouse-tab">
               <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                     <img src="{{Vite::asset('resources/images/womenwear/signature-1.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-2.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/womenwear/signature-3.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-4.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-5.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                     <img src="{{Vite::asset('resources/images/womenwear/signature-12.png')}}" class="object-cover w-auto h-auto" alt="">
                 </div>
               </div>
           </div>
           <div class="hidden" id="jacket" role="tabpanel" aria-labelledby="jacket-tab">
               <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                     <img src="{{Vite::asset('resources/images/womenwear/signature-1.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-2.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/womenwear/signature-3.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-4.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-5.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                     <img src="{{Vite::asset('resources/images/womenwear/signature-12.png')}}" class="object-cover w-auto h-auto" alt="">
                 </div>
               </div>
           </div>
           <div class="hidden" id="pant" role="tabpanel" aria-labelledby="pant-tab">
               <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                     <img src="{{Vite::asset('resources/images/womenwear/signature-1.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-2.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/womenwear/signature-3.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-4.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-5.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                     <img src="{{Vite::asset('resources/images/womenwear/signature-12.png')}}" class="object-cover w-auto h-auto" alt="">
                 </div>
               </div>
           </div>
           <div class="hidden" id="dress" role="tabpanel" aria-labelledby="dress-tab">
               <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                     <img src="{{Vite::asset('resources/images/womenwear/signature-1.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-2.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/womenwear/signature-3.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-4.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-5.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                     <img src="{{Vite::asset('resources/images/womenwear/signature-12.png')}}" class="object-cover w-auto h-auto" alt="">
                 </div>
               </div>
           </div>
           <div class="hidden" id="coat" role="tabpanel" aria-labelledby="coat-tab">
               <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                     <img src="{{Vite::asset('resources/images/womenwear/signature-1.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-2.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/womenwear/signature-3.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-4.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/womenwear/signature-5.png')}}" class="object-cover w-auto h-auto" alt="">
                   </div>
-                  <div class="" data-aos="zoom-in">
+                  <div class="holographic-card" data-aos="zoom-in">
                     <img src="{{Vite::asset('resources/images/womenwear/signature-12.png')}}" class="object-cover w-auto h-auto" alt="">
                 </div>
               </div>

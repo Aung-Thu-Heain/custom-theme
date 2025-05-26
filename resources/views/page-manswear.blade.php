@@ -63,56 +63,56 @@
         <div  id="default-tab-content">
             <div class="hidden" id="suit" role="tabpanel" aria-labelledby="suit-tab">
                 <div class=" max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4" >
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in ">
                       <img src="{{Vite::asset('resources/images/manswear/Rectangle-107.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-108.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                           <img src="{{Vite::asset('resources/images/manswear/Rectangle-109.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-110.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-111.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-112.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-113.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-114.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-115.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-116.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-117.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/manswear/Rectangle-118.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
                 </div>
             </div>
             <div class="hidden" id="shirt" role="tabpanel" aria-labelledby="shirt-tab">
                 <div class=" max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4" >
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/manswear/Rectangle-107.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-108.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                           <img src="{{Vite::asset('resources/images/manswear/Rectangle-109.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-110.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
 
@@ -120,16 +120,16 @@
             </div>
             <div class="hidden" id="jacket" role="tabpanel" aria-labelledby="jacket-tab">
                 <div class=" max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4" >
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/manswear/Rectangle-107.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-108.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                           <img src="{{Vite::asset('resources/images/manswear/Rectangle-109.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-110.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
 
@@ -137,16 +137,16 @@
             </div>
             <div class="hidden" id="pant" role="tabpanel" aria-labelledby="pant-tab">
                 <div class=" max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4" >
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/manswear/Rectangle-107.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-108.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                           <img src="{{Vite::asset('resources/images/manswear/Rectangle-109.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-110.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
 
@@ -154,16 +154,16 @@
             </div>
             <div class="hidden" id="vest" role="tabpanel" aria-labelledby="vest-tab">
                 <div class=" max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4" >
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/manswear/Rectangle-107.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-108.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                           <img src="{{Vite::asset('resources/images/manswear/Rectangle-109.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-110.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
 
@@ -171,16 +171,16 @@
             </div>
             <div class="hidden" id="overcoat" role="tabpanel" aria-labelledby="overcoat-tab">
                 <div class=" max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4" >
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                       <img src="{{Vite::asset('resources/images/manswear/Rectangle-107.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-108.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                           <img src="{{Vite::asset('resources/images/manswear/Rectangle-109.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
-                    <div class="" data-aos="zoom-in">
+                    <div class="holographic-card" data-aos="zoom-in">
                         <img src="{{Vite::asset('resources/images/manswear/Rectangle-110.png')}}" class="object-cover w-auto h-auto" alt="">
                     </div>
 

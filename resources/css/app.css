@@ -27,23 +27,16 @@ body{
   transition: all 1.5s ease;
 }
 
-/* .holographic-card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 230%;
-  height: 230%;
-  background: linear-gradient(
-    0deg,
-    transparent,
-    transparent 20%,
-    rgba(9, 72, 167, 0.7)
-  );
-  transform: rotate(-45deg);
-  transition: all 0.7s ease;
-  opacity: 0;
-} */
+.tab-transition {
+    transition: opacity 2.3s ease, transform 2.3s ease;
+    opacity: 0;
+    transform: scaleX(0.8);
+}
+
+.tab-active {
+    opacity: 1 !important;
+    transform: translateY(10px) !important;
+}
 
 .holographic-card img {
   transition: transform 1s ease;
@@ -51,12 +44,6 @@ body{
 .holographic-card img:hover {
   transform: scale(1.2);
 }
-
-/* .holographic-card:hover::before {
-  opacity: 1;
-  transition: all 0.7s ease;
-  transform: rotate(-45deg) translateY(100%);
-} */
 
 a{
   text-decoration: none;

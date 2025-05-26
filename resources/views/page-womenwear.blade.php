@@ -191,31 +191,66 @@
           <div class="hidden" id="coat" role="tabpanel" aria-labelledby="coat-tab">
               <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
                   <div class="holographic-card" data-aos="zoom-in">
-                    <img src="{{Vite::asset('resources/images/womenwear/signature-1.png')}}" class="object-cover w-auto h-auto" alt="">
+                    <img src="{{Vite::asset('resources/images/womenwear/signature-1.png')}}" class=" object-cover w-auto h-auto" alt="">
                   </div>
                   <div class="holographic-card" data-aos="zoom-in">
-                      <img src="{{Vite::asset('resources/images/womenwear/signature-2.png')}}" class="object-cover w-auto h-auto" alt="">
+                      <img src="{{Vite::asset('resources/images/womenwear/signature-2.png')}}" class=" object-cover w-auto h-auto" alt="">
                   </div>
                   <div class="holographic-card" data-aos="zoom-in">
-                        <img src="{{Vite::asset('resources/images/womenwear/signature-3.png')}}" class="object-cover w-auto h-auto" alt="">
+                        <img src="{{Vite::asset('resources/images/womenwear/signature-3.png')}}" class=" object-cover w-auto h-auto" alt="">
                   </div>
                   <div class="holographic-card" data-aos="zoom-in">
-                      <img src="{{Vite::asset('resources/images/womenwear/signature-4.png')}}" class="object-cover w-auto h-auto" alt="">
+                      <img src="{{Vite::asset('resources/images/womenwear/signature-4.png')}}" class=" object-cover w-auto h-auto" alt="">
                   </div>
                   <div class="holographic-card" data-aos="zoom-in">
-                      <img src="{{Vite::asset('resources/images/womenwear/signature-5.png')}}" class="object-cover w-auto h-auto" alt="">
+                      <img src="{{Vite::asset('resources/images/womenwear/signature-5.png')}}" class=" object-cover w-auto h-auto" alt="">
                   </div>
                   <div class="holographic-card" data-aos="zoom-in">
-                    <img src="{{Vite::asset('resources/images/womenwear/signature-12.png')}}" class="object-cover w-auto h-auto" alt="">
+                    <img src="{{Vite::asset('resources/images/womenwear/signature-12.png')}}" class=" object-cover w-auto h-auto" alt="">
                 </div>
               </div>
           </div>
         </div>
      </div>
 </section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const tabLinks = document.querySelectorAll('[data-tabs-target]');
+    const tabContents = document.querySelectorAll('#default-tab-content > div');
+    tabLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
 
- @include('partials.fabrics')
+            e.preventDefault();
 
-  @include('partials.appointment')
+            // Remove active class from all contents
+            tabContents.forEach(content => {
+                content.classList.add("hidden");
+                content.classList.remove("tab-active");
+            });
 
+            const targetId = this.getAttribute("data-tabs-target");
+            const target = document.querySelector(targetId);
+
+            if (target) {
+                target.classList.remove("hidden");
+
+                // Trigger animation
+                target.classList.add("tab-transition");
+
+                // Force reflow to ensure animation is applied
+                void target.offsetWidth;
+
+                target.classList.add("tab-active");
+
+                // Optionally remove animation class after done
+                setTimeout(() => {
+                    target.classList.remove("tab-transition");
+                }, 5000);
+            }
+        });
+    });
+});
+</script>
+@include('partials.fabrics')
+@include('partials.appointment')
 @endsection

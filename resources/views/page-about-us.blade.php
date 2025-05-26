@@ -66,42 +66,42 @@
         </p>
     </div>
     <div class="max-w-5xl grid  mt-5  grid-cols-2 px-2 md:grid-cols-3 mx-auto gap-4">
-          <div class=" ">
+          <div class="">
              <img src="{{Vite::asset('resources/images/about/our-team-1.png')}}" data-aos="zoom-in" class="object-cover w-auto h-auto" alt="">
              <div class="text-start py-2">
                 <p class="text-[20px] ">Mike Connon Broke</p>
                 <p class="text-sm ">Master Tailor</p>
              </div>
           </div>
-          <div class=" ">
+          <div class="">
             <img src="{{Vite::asset('resources/images/about/our-team-2.png')}}" data-aos="zoom-in" class="object-cover w-auto h-auto" alt="">
             <div class="text-start py-2">
                <p class="text-[20px] ">Saint Louis Mathrew</p>
                <p class="text-sm ">Manager</p>
             </div>
          </div>
-         <div class=" ">
+         <div class="">
             <img src="{{Vite::asset('resources/images/about/our-team-3.png')}}" data-aos="zoom-in" class="object-cover w-auto h-auto" alt="">
             <div class="text-start py-2">
               <p class="text-[20px] ">Lilly Pathna</p>
               <p class="text-sm ">Designer</p>
             </div>
          </div>
-         <div class=" ">
+         <div class="">
             <img src="{{Vite::asset('resources/images/about/our-team-4.png')}}" data-aos="zoom-in" class="object-cover w-auto h-auto" alt="">
             <div class="text-start py-2">
               <p class="text-[20px] ">James Heiley Isi</p>
               <p class="text-sm ">Designer</p>
             </div>
         </div>
-       <div class=" ">
+       <div class="">
           <img src="{{Vite::asset('resources/images/about/our-team-5.png')}}" data-aos="zoom-in" class="object-cover w-auto h-auto" alt="">
           <div class="text-start py-2">
             <p class="text-[20px] ">Jenny Nath</p>
             <p class="text-sm ">Designer</p>
           </div>
       </div>
-     <div class=" ">
+     <div class="">
           <img src="{{Vite::asset('resources/images/about/our-team-6.png')}}" data-aos="zoom-in" class="object-cover w-auto h-auto" alt="">
           <div class="text-start py-2">
             <p class="text-[20px] ">Osw Aowknts</p>
@@ -264,7 +264,7 @@
           The team went above and beyond to create a suit that reflects my style perfectly. I’ve never felt more confident.
         </p>
         <hr class=" border-primary border"></hr>
-        <div class="flex items-center gap-3 mt-4">
+        <div class="flex items-center gap-3 mt-4 ">
           <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="User" class="w-10 h-10 rounded-full object-cover">
           <div class="text-left">
             <p class="text-white font-semibold">Daniel Howard</p>

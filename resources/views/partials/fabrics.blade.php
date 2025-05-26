@@ -46,17 +46,15 @@
         &#10095;
       </button>
     </div>
-    <div id="sliderCaption" class="text-center py-4 text-gray-700 font-medium"></div>
+    <div id="sliderCaption" class="text-center py-1 text-gray-700 font-medium"></div>
   </div>
 </div>
   <script>
   let currentIndex = 0;
   let images = @json($images);
-  console.log(images);
   function openModal(index = 0) {
     currentIndex = index;
     currentTabImages = images[currentIndex]
-    console.log('currentTabImages', currentTabImages);
     updateSlider();
     document.getElementById('imageModal').classList.remove('hidden');
   }

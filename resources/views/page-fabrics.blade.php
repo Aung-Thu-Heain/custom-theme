@@ -57,7 +57,7 @@
               <div class="grid grid-cols-2 md:grid-cols-6 gap-4 ">
                 @foreach ($images[$key] as $image)
                     <div class="relative">
-                      <img class="h-[145px] w-full object-cover rounded-lg" onclick="openModal({{ $loop->index }}, '{{ $key }}')" src="{{$image['src']}}" alt="">
+                      <img class="h-[145px] w-full object-cover rounded-lg cursor-pointer" onclick="openModal({{ $loop->index }}, '{{ $key }}')" src="{{$image['src']}}" alt="">
                       <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">{{$image['caption']}}</div>
                     </div>
                 @endforeach
@@ -90,6 +90,7 @@
 </div>
 
 <script>
+  //form model slider
   let currentIndex = 0;
   let images = @json($images);
   console.log(images);
@@ -121,8 +122,47 @@
     currentIndex = (currentIndex - 1 + currentTabImages.length) % currentTabImages.length;
     updateSlider();
   }
-</script>
 
+
+//for tan animaiton
+document.addEventListener("DOMContentLoaded", function () {
+    const tabLinks = document.querySelectorAll('[data-tabs-target]');
+    const tabContents = document.querySelectorAll('#default-tab-content > div');
+    tabLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+
+            e.preventDefault();
+
+            // Remove active class from all contents
+            tabContents.forEach(content => {
+                content.classList.add("hidden");
+                content.classList.remove("tab-active");
+            });
+
+            const targetId = this.getAttribute("data-tabs-target");
+            const target = document.querySelector(targetId);
+
+            if (target) {
+                target.classList.remove("hidden");
+
+                // Trigger animation
+                target.classList.add("tab-transition");
+
+                // Force reflow to ensure animation is applied
+                void target.offsetWidth;
+
+                target.classList.add("tab-active");
+
+                // Optionally remove animation class after done
+                setTimeout(() => {
+                    target.classList.remove("tab-transition");
+                }, 5000);
+            }
+        });
+    });
+});
+
+</script>
 @include('partials.appointment')
 @endsection
 

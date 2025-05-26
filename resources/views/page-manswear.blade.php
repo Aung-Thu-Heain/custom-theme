@@ -189,9 +189,44 @@
         </div>
      </div>
 </section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const tabLinks = document.querySelectorAll('[data-tabs-target]');
+    const tabContents = document.querySelectorAll('#default-tab-content > div');
+    tabLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
 
- @include('partials.fabrics')
+            e.preventDefault();
 
-  @include('partials.appointment')
+            // Remove active class from all contents
+            tabContents.forEach(content => {
+                content.classList.add("hidden");
+                content.classList.remove("tab-active");
+            });
 
+            const targetId = this.getAttribute("data-tabs-target");
+            const target = document.querySelector(targetId);
+
+            if (target) {
+                target.classList.remove("hidden");
+
+                // Trigger animation
+                target.classList.add("tab-transition");
+
+                // Force reflow to ensure animation is applied
+                void target.offsetWidth;
+
+                target.classList.add("tab-active");
+
+                // Optionally remove animation class after done
+                setTimeout(() => {
+                    target.classList.remove("tab-transition");
+                }, 5000);
+            }
+        });
+    });
+});
+</script>
+@include('partials.fabrics')
+@include('partials.appointment')
 @endsection

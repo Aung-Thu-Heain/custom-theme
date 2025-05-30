@@ -42,9 +42,15 @@
                   <h3 class="font-bold text-[18px] mb-4">Information</h3>
                   <ul class="space-y-2 text-[16px] font-normal">
                       <li class="flex items-center gap-2"><img src="{{Vite::asset('resources/images/icons/ri-time-line.png')}}" class="w-5"> Everyday 9:15 AM - 9:30 PM</li>
-                      <li class="flex items-center gap-2"><img src="{{Vite::asset('resources/images/icons/ri-phone-line.png')}}" class="w-5"> 0897875470</li>
-                      <li class="flex items-center gap-2"><img src="{{Vite::asset('resources/images/icons/ri-mail-line.png')}}" class="w-5"> icontailorhouse@gmail.com</li>
-                      <li class="flex items-center gap-2"><img src="{{Vite::asset('resources/images/icons/ri-location.png')}}" class="w-5"> Zone 1B No 087, The Palladium World Shopping, 555 Ratchaprarop Rd, Makkasan, Ratchathewi, Bangkok.</li>
+                      <li class="flex items-center gap-2"><img src="{{Vite::asset('resources/images/icons/ri-phone-line.png')}}" class="w-5">
+                        <span>
+                           <a href="tel:0897875470">0897875470</a>,
+                           <a href="tel:+66945695499">+66945695499</a>,
+                           <a href="tel:+66838345118">+66838345118</a>
+                         </span>
+                      </li>
+                      <li class="flex items-center gap-2"><img src="{{Vite::asset('resources/images/icons/ri-mail-line.png')}}" class="w-5"><a href="mailto:icontailorhouse@gmail.com">icontailorhouse@gmail.com</a></li>
+                      <li class="flex items-center gap-2"><img src="{{Vite::asset('resources/images/icons/ri-location.png')}}" class="w-5">859-861 Rama 4 Road,Wang Mai, Pathumwan Wan,Bangkok 10330</li>
                   </ul>
               </div>
           </footer>

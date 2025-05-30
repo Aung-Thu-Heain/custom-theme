@@ -18,11 +18,10 @@
   <aside class="w-full md:w-3/10 bg-black px-6 py-10 md:px-[100px] md:py-[100px]">
     <h2 class="text-lg font-bold mb-10 md:mb-[50px] text-white">Fabric Categories</h2>
     <ul class="space-y-4 leading-10 " id="default-tab" data-tabs-toggle="#default-tab-content" data-tabs-active-classes="border-b-2 text-white" role="tablist">
-      <li class="text-gray-400 hover:text-white cursor-pointer" id="wool-tab" data-tabs-target="#wool" type="button" role="tab" aria-controls="wool" aria-selected="false">Wool & Cashmere</li>
-      <li class="text-gray-400 hover:text-white cursor-pointer " id="silk-tab" data-tabs-target="#silk" type="button" role="tab" aria-controls="silk" aria-selected="false">Silk & Satin</li>
-      <li class="text-gray-400 hover:text-white cursor-pointer" id="linen-tab" data-tabs-target="#linen" type="button" role="tab" aria-controls="linen" aria-selected="false">Linen & Cotton</li>
-      <li class="text-gray-400 hover:text-white cursor-pointer" id="heritage-tab" data-tabs-target="#heritage" type="button" role="tab" aria-controls="heritage" aria-selected="false">Heritage Tweeds & Flannels</li>
-      <li class="text-gray-400 hover:text-white cursor-pointer" id="coat-tab" data-tabs-target="#coat" type="button" role="tab" aria-controls="coat" aria-selected="false">OverCoat</li>
+      <li class="text-gray-400 hover:text-white cursor-pointer" id="wool-tab" data-tabs-target="#wool" type="button" role="tab" aria-controls="wool" aria-selected="false">Good</li>
+      <li class="text-gray-400 hover:text-white cursor-pointer " id="silk-tab" data-tabs-target="#silk" type="button" role="tab" aria-controls="silk" aria-selected="false">Premium</li>
+      <li class="text-gray-400 hover:text-white cursor-pointer" id="linen-tab" data-tabs-target="#linen" type="button" role="tab" aria-controls="linen" aria-selected="false">Luxury</li>
+
     </ul>
   </aside>
 
@@ -30,24 +29,59 @@
        @php
           $images = [
             'wool' => [
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-1.png'),'caption' => '#elegante3'],
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-2.png'),'caption' => '#elegante3'],
+              ['src' => Vite::asset('resources/images/fabrics/good1.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good2.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good3.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good4.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good5.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good6.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good7.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good8.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good9.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good10.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good11.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good12.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good13.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good14.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good15.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good16.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good17.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good18.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good19.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good20.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good21.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good22.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good23.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good24.jpg'),'caption' => ''],
             ],
             'silk' => [
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-3.png'),'caption' => '#elegante3'],
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-4.png'),'caption' => '#elegante3'],
+              ['src' => Vite::asset('resources/images/fabrics/premium1.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium2.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium3.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium4.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium5.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium6.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium7.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium8.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium9.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium10.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium11.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium12.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium13.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium14.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium15.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium16.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium17.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium18.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium19.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium20.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium21.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium22.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium23.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/premium24.jpg'),'caption' => ''],
             ],
             'linen' => [
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-5.png'),'caption' => '#elegante3'],
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-6.png'),'caption' => '#elegante3'],
-            ],
-            'heritage' => [
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-1.png'),'caption' => '#elegante3'],
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-2.png'),'caption' => '#elegante3'],
-            ],
-            'coat' => [
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-3.png'),'caption' => '#elegante3'],
-              ['src' => Vite::asset('resources/images/fabrics/fabrics-4.png'),'caption' => '#elegante3'],
+              ['src' => Vite::asset('resources/images/fabrics/luxury1.png'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury2.png'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury3.png'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury4.png'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury5.png'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury6.png'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury7.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury8.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury9.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury10.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury11.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury12.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury13.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury14.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury15.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury16.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury17.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury18.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury19.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury20.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury21.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury22.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury23.jpg'),'caption' => ''],
+              ['src' => Vite::asset('resources/images/fabrics/luxury24.jpg'),'caption' => ''],
             ],
           ];
        @endphp
@@ -85,7 +119,7 @@
         &#10095;
       </button>
     </div>
-    <div id="sliderCaption" class="text-center py-1 text-gray-700 font-medium"></div>
+    {{-- <div id="sliderCaption" class="text-center py-1 text-gray-700 font-medium"></div> --}}
   </div>
 </div>
 
@@ -110,7 +144,7 @@
   function updateSlider() {
     const image = currentTabImages[currentIndex];
     document.getElementById('sliderImage').src = image.src;
-    document.getElementById('sliderCaption').textContent = image.caption;
+   // document.getElementById('sliderCaption').textContent = image.caption;
   }
 
   function nextImage() {

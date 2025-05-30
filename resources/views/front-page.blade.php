@@ -36,7 +36,7 @@
                 <div class="absolute inset-0 bg-black/60"></div>
                 {{-- <img src="{{Vite::asset('resources/images/home/about-craft.png')}}" alt="Tailoring Process" class="object-cover rounded w-full max-h-[543px] shadow-lg"> --}}
 
-                 <iframe class="w-full h-auto md:min-h-[630px]"  src="https://www.youtube.com/embed/qXbWq1_gWNg?si=rdnTf7Fg4w2zpRfr&amp;controls=0&autoplay=1&mute=1&showinfo=0&amp;autohide=1&amp;rel=0&amp;hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width:100%;height:100%;"></iframe>
+                 <iframe class="w-full min-h-[200px] md:min-h-[630px]"  src="https://www.youtube.com/embed/qXbWq1_gWNg?si=rdnTf7Fg4w2zpRfr&amp;controls=0&autoplay=1&mute=1&showinfo=0&amp;autohide=1&amp;rel=0&amp;hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 {{-- <button class="absolute inset-0 flex items-center justify-center">
                     <div data-aos="fade-right" class="bg-black bg-opacity-70 rounded-full w-24 h-24 flex items-center justify-center">
                         <img src="{{Vite::asset('resources/images/home/play.png')}}" alt="">

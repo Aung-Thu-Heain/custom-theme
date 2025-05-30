@@ -61,6 +61,10 @@ a{
   color: black;
 }
 
+.wpcf7-radio .wpcf7-list-item{
+  margin: 0px;
+}
+
 /* home page css  */
 /* #hero-section{
   background-image: url("../images/home/home-banner.png");

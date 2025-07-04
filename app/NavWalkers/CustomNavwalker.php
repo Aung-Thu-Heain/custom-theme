@@ -29,7 +29,7 @@ class CustomNavwalker extends \Walker_Nav_Menu
             $output .= '</button>';
 
             // OPEN the dropdown wrapper + UL early
-            $output .= "<div id=\"$dropdown_id\" class=\"z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-100 md:w-44 dark:bg-gray-700 dark:divide-gray-600\">\n";
+            $output .= "<div id=\"$dropdown_id\" class=\"z-10 hidden font-normal bg-white divide-x border-b-2 border-[#04042E] divide-yellow-500  shadow-sm w-100 md:w-44 dark:bg-gray-700 dark:divide-gray-600\">\n";
             $output .= '<ul class="py-2 text-sm text-gray-700 dark:text-gray-400">' . "\n";
         } else {
             $output .= '<li>';

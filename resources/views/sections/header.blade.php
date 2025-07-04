@@ -22,7 +22,7 @@
         wp_nav_menu([
           'theme_location' => 'primary_navigation',
           'container' => true,
-          'menu_class' => 'flex flex-col font-medium p-4 md:p-0 mt-4  rounded-lg md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700',
+          'menu_class' => 'flex flex-col font-medium p-4 md:p-0 mt-4  rounded-lg  md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700',
           'walker' => new \App\NavWalkers\CustomNavwalker(),
           'fallback_cb' => false,
         ]);

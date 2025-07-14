@@ -2,14 +2,24 @@
 @section('content')
 
 <section class="hero">
-  <div id="manswear-hero-section" class="w-auto relative  bg-cover bg-no-repeat" style="height: 601px;background-image: url('{{Vite::asset('resources/images/contact/banner.png')}}')">
-    <div class="absolute inset-0 bg-black/70"></div>
-      <div class="absolute inset-0 flex flex-col items-start text-white text-start p-20">
-          <p class=" mb-2 font-normal text-[24px] " data-aos="fade-left">Contact Us</p>
-          <h1 class="text-4xl font-bold mb-6 text-[48px] leading-[78px] "  data-aos="fade-right">We look forward to assisting you <br>with tailored craftsmanship.</h1>
-      </div>
+  <div class="relative w-full">
+    <img
+      src="{{ Vite::asset('resources/images/contact/banner.jpg') }}"
+      alt="Banner"
+      class="w-full h-auto"
+    />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="absolute inset-0 flex flex-col items-start text-white text-start p-4 md:p-20">
+      <p class="mb-2 font-normal text-[16px] md:text-[24px]" data-aos="fade-left">
+        Contact Us
+      </p>
+      <h1 class="font-bold mb-4 text-[22px] md:text-[48px] leading-tight md:leading-[78px]" data-aos="fade-right">
+        We look forward to assisting you <br>with tailored craftsmanship.
+      </h1>
+    </div>
   </div>
 </section>
+
 
 <section class="main">
   <div class="bg-black text-white min-h-screen flex flex-col md:flex-row p-5 md:p-[50px] pb-20">

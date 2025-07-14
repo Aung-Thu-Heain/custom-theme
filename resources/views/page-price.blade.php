@@ -2,11 +2,20 @@
 @section('content')
 
 <section class="hero">
-  <div id="manswear-hero-section" class="w-auto relative  bg-cover bg-no-repeat" style="height: 601px;background-image: url('{{Vite::asset('resources/images/price/banner.svg')}}')">
-      <div class="absolute inset-0 flex flex-col items-start text-white text-start p-20">
-          <p class=" mb-2 font-normal text-[24px] " data-aos="fade-left">Price List</p>
-          <h1 class=" font-bold mb-6 text-[34px] md:text-[48px] leading-[78px] "  data-aos="fade-right">Affordable Tailoring, Transparent<br>Pricing.</h1>
-      </div>
+  <div class="relative w-full">
+    <img
+      src="{{ Vite::asset('resources/images/price/banner.svg') }}"
+      alt="Banner"
+      class="w-full h-auto"
+    />
+    <div class="absolute inset-0 flex flex-col items-start text-white text-start p-4 md:p-20">
+      <p class="mb-2 font-normal text-[16px] md:text-[24px]" data-aos="fade-left">
+        Price List
+      </p>
+      <h1 class="font-bold mb-4 text-[22px] md:text-[48px] leading-tight md:leading-[78px]" data-aos="fade-right">
+        Affordable Tailoring, Transparent<br>Pricing.
+      </h1>
+    </div>
   </div>
 </section>
 

@@ -1,100 +1,225 @@
 @extends('layouts.app')
 @section('content')
 
+@php
+
+$suitingGoodImages=[];
+$shirtingGoodImages=[];
+$blazerGoodImages=[];
+$overcoatGoodImages=[];
+$liningGoodImages = [];
+$suitingPremiumImages=[];
+$shirtingPremiumImages=[];
+$blazerPremiumImages=[];
+$overcoatPremiumImages=[];
+$liningPremiumImages = [];
+for ($i = 1; $i <= 71; $i++) {
+    $suitingGoodImages[] = [
+        'src' => Vite::asset("resources/images/fabrics/best/suiting/suiting{$i}.jpg"),
+        'caption' => ''
+    ];
+}
+
+for ($i = 1; $i <= 188; $i++) {
+    $shirtingGoodImages[] = [
+        'src' => Vite::asset("resources/images/fabrics/best/shirting/shirting{$i}.jpg"),
+        'caption' => ''
+    ];
+}
+
+for ($i = 1; $i <= 16; $i++) {
+    $blazerGoodImages[] = [
+        'src' => Vite::asset("resources/images/fabrics/best/blazer/blazer{$i}.jpg"),
+        'caption' => ''
+    ];
+}
+
+for ($i = 1; $i <= 17; $i++) {
+    $overcoatGoodImages[] = [
+        'src' => Vite::asset("resources/images/fabrics/best/overcoat/overcoat{$i}.jpg"),
+        'caption' => ''
+    ];
+}
+
+for ($i = 1; $i <= 58; $i++) {
+    $liningGoodImages[] = [
+        'src' => Vite::asset("resources/images/fabrics/best/lining/lining{$i}.jpg"),
+        'caption' => ''
+    ];
+}
+
+for ($i = 1; $i <= 38; $i++) {
+    $suitingPremiumImages[] = [
+        'src' => Vite::asset("resources/images/fabrics/premium/suiting/suiting{$i}.jpg"),
+        'caption' => ''
+    ];
+}
+
+for ($i = 1; $i <= 328; $i++) {
+    $shirtingPremiumImages[] = [
+        'src' => Vite::asset("resources/images/fabrics/premium/shirting/shirting{$i}.jpg"),
+        'caption' => ''
+    ];
+}
+
+for ($i = 1; $i <= 14; $i++) {
+    $blazerPremiumImages[] = [
+        'src' => Vite::asset("resources/images/fabrics/premium/blazer/blazer{$i}.jpg"),
+        'caption' => ''
+    ];
+}
+
+
+for ($i = 1; $i <= 31; $i++) {
+    $overcoatPremiumImages[] = [
+        'src' => Vite::asset("resources/images/fabrics/premium/overcoat/overcoat{$i}.jpg"),
+        'caption' => ''
+    ];
+}
+
+for ($i = 1; $i <= 0; $i++) {
+    $liningPremiumImages[] = [
+        'src' => Vite::asset("resources/images/fabrics/premium/lining/lining{$i}.jpg"),
+        'caption' => ''
+    ];
+}
+
+$goodImages = [
+  'suiting' => $suitingGoodImages,
+  'shirting' => $shirtingGoodImages,
+  'blazer' => $blazerGoodImages,
+  'overcoat' => $overcoatGoodImages,
+  'lining' => $liningGoodImages,
+];
+
+$premiumImages = [
+  'suiting-premium' => $suitingPremiumImages,
+  'shirting-premium' => $shirtingPremiumImages,
+  'blazer-premium' => $blazerPremiumImages,
+  'overcoat-premium' => $overcoatPremiumImages,
+  'lining-premium' => $liningPremiumImages,
+];
+
+$bothImages = array_merge($goodImages, $premiumImages);
+
+@endphp
+
 <section class="hero">
-  <div id="manswear-hero-section" class="w-auto relative  bg-cover bg-no-repeat" style="height: 601px;background-image: url('{{Vite::asset('resources/images/fabrics/banner.png')}}')">
-    {{-- <div class="absolute inset-0 bg-black/70"></div> --}}
-      <div class="absolute inset-0 flex flex-col items-start text-white text-start p-20">
-          <p class=" mb-2 font-normal text-[24px] " data-aos="fade-left">Fabrics</p>
-          <h1 class=" font-bold mb-6 text-[34px] md:text-[48px] leading-[78px] "  data-aos="fade-right">Crafted from The Finest <br>Threads.</h1>
-      </div>
+  <div class="relative w-full ">
+    <img
+      src="{{ Vite::asset('resources/images/shuting/banner.svg') }}"
+      alt="Manswear Hero"
+      class="w-full h-auto  md:object-cover"
+    />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="absolute inset-0 flex flex-col items-start text-white text-start p-4 md:p-20">
+      <p class="mb-2 font-normal text-[16px] md:text-[24px]" data-aos="fade-left">
+        Fabrics
+      </p>
+      <h1 class="font-bold mb-4 text-[22px] md:text-[48px] leading-tight md:leading-[78px]" data-aos="fade-right">
+        Crafted from The Finest <br>Threads.
+      </h1>
+    </div>
   </div>
 </section>
 
 
+
 <section class="bg-[#010024] text-white font-sans">
 
-  <div class="flex flex-col md:flex-row min-h-screen">
-  <aside class="w-full md:w-3/10 bg-black px-6 py-10 md:px-[100px] md:py-[100px]">
-    <h2 class="text-lg font-bold mb-10 md:mb-[50px] text-white">Fabric Categories</h2>
-    <ul class="space-y-4 leading-10 " id="default-tab" data-tabs-toggle="#default-tab-content" data-tabs-active-classes="border-b-2 text-white" role="tablist">
-      <li class="text-gray-400 hover:text-white cursor-pointer" id="wool-tab" data-tabs-target="#wool" type="button" role="tab" aria-controls="wool" aria-selected="false">Good</li>
-      <li class="text-gray-400 hover:text-white cursor-pointer " id="silk-tab" data-tabs-target="#silk" type="button" role="tab" aria-controls="silk" aria-selected="false">Premium</li>
-      <li class="text-gray-400 hover:text-white cursor-pointer" id="linen-tab" data-tabs-target="#linen" type="button" role="tab" aria-controls="linen" aria-selected="false">Luxury</li>
+  <div class="flex flex-col  md:flex-row min-h-screen">
+  <aside class="  md:w-3/10  ">
+    <div class="bg-[#0D0D27]  px-6 py-10 md:px-[20px] md:ms-auto md:py-[40px] md:w-[80%] h-fit mt-[100px]">
+      <h2 class="text-lg font-bold mb-2  text-white">Best Quality</h2>
+      <hr class="border-gray-500 my-3">
 
-    </ul>
+      <ul class="space-y-4 leading-10 " id="default-tab" data-tabs-toggle="#default-tab-content" data-tabs-active-classes="text-yellow-200" role="tablist">
+        @foreach($goodImages as $key => $imageGroup)
+          <div class="flex items-center gap-2 justify-between">
+            <li class=" hover:text-yellow-200 text-white mr-10 cursor-pointer " id="{{$key}}-tab" data-tabs-target="#{{$key}}" type="button" role="tab" aria-controls="{{$key}}" aria-selected="false"><span class="text-xl pr-2 group-hover:text-yellow-200">&#8250;</span>{{ucfirst($key)}}</li>
+            <span class="w-[25px] h-[25px] text-xs bg-[#C5B359] rounded-full text-black text-center leading-6">{{count($goodImages[$key])}}</span>
+          </div>
+        @endforeach
+
+      <h2 class="text-lg font-bold mb-2  text-white mt-10">Premium Quality</h2>
+      <hr class="border-gray-500 my-3">
+        @foreach($premiumImages as $key => $imageGroup)
+          <div class="flex items-center gap-2 justify-between">
+            <li class=" hover:text-yellow-200 text-white mr-10 cursor-pointer " id="{{$key}}-tab" data-tabs-target="#{{$key}}" type="button" role="tab" aria-controls="{{$key}}" aria-selected="false"><span class="text-xl pr-2 group-hover:text-yellow-200">&#8250;</span>{{ucfirst(str_replace('-premium', '', $key))}}</li>
+            <span class="w-[25px] h-[25px] bg-[#C5B359] text-xs rounded-full text-black text-center leading-6">{{count($premiumImages[$key])}}</span>
+          </div>
+        @endforeach
+
+      </ul>
+
+
+
+    </div>
   </aside>
 
   <div class="flex-1 px-6 pt-10 pb-5 md:px-[50px] md:pt-[100px] md:pb-[20px]" id="default-tab-content">
-       @php
-          $images = [
-            'wool' => [
-              ['src' => Vite::asset('resources/images/fabrics/good1.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good2.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good3.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good4.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good5.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good6.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good7.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good8.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good9.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good10.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good11.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good12.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good13.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good14.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good15.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good16.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good17.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good18.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good19.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good20.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good21.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good22.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good23.jpg'),'caption' => ''],              ['src' => Vite::asset('resources/images/fabrics/good24.jpg'),'caption' => ''],
-            ],
-            'silk' => [
-              ['src' => Vite::asset('resources/images/fabrics/premium1.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium2.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium3.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium4.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium5.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium6.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium7.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium8.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium9.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium10.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium11.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium12.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium13.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium14.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium15.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium16.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium17.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium18.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium19.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium20.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium21.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium22.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium23.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/premium24.jpg'),'caption' => ''],
-            ],
-            'linen' => [
-              ['src' => Vite::asset('resources/images/fabrics/luxury1.png'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury2.png'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury3.png'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury4.png'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury5.png'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury6.png'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury7.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury8.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury9.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury10.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury11.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury12.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury13.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury14.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury15.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury16.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury17.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury18.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury19.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury20.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury21.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury22.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury23.jpg'),'caption' => ''],
-              ['src' => Vite::asset('resources/images/fabrics/luxury24.jpg'),'caption' => ''],
-            ],
-          ];
-       @endphp
-
-       @foreach($images as $key => $imageGroup)
+       @foreach($goodImages as $key => $imageGroup)
           <div class="hidden" id="{{$key}}" role="tabpanel" aria-labelledby="wool-tab">
-              <div class="grid grid-cols-2 md:grid-cols-6 gap-4 ">
-                @foreach ($images[$key] as $image)
-                    <div class="relative">
-                      <img class="h-[145px] w-full object-cover rounded-lg cursor-pointer" onclick="openModal({{ $loop->index }}, '{{ $key }}')" src="{{$image['src']}}" alt="">
-                      <div class="absolute bottom-0 left-0 right-0 text-white p-2 " data-aos="zoom-out">{{$image['caption']}}</div>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="images-container-{{$key}}">
+                @foreach ($goodImages[$key] as $index => $image)
+                    <div class="relative holographic-card group image-item" data-aos="zoom-in" data-page="{{ floor($index / 16) + 1 }}">
+                      <img class="h-[200px]  w-full object-cover rounded-lg cursor-pointer" onclick="openModal({{ $index }}, '{{ $key }}')" src="{{$image['src']}}" alt="">
+                      <div class="absolute bottom-0 left-0 right-0 text-white p-1 text-center caption-text opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
+                          style="background-color: rgba(0, 0, 0, 0.6);">
+                          {{ucfirst(str_replace('-premium', '', $key))}}
+                      </div>
                     </div>
                 @endforeach
+              </div>
+
+              <!-- Pagination for good images -->
+              <div class="flex justify-center items-center space-x-2 mt-8" id="pagination-{{$key}}">
+                @php
+                  $totalPages = ceil(count($goodImages[$key]) / 32);
+                @endphp
+                @for($page = 1; $page <= $totalPages; $page++)
+                  <button
+                    class="px-2 py-2 text-sm md:px-3 md:py-2 md:text-lg rounded {{ $page === 1 ? 'bg-[#C5B359] text-black' : 'bg-gray-600 text-white' }} hover:bg-[#C5B359] hover:text-black transition-colors pagination-btn"
+                    data-tab="{{$key}}"
+                    data-page="{{$page}}"
+                    onclick="changePage('{{$key}}', {{$page}})"
+                  >
+                    {{$page}}
+                  </button>
+                @endfor
+              </div>
+          </div>
+       @endforeach
+
+       @foreach($premiumImages as $key => $imageGroup)
+          <div class="hidden" id="{{$key}}" role="tabpanel" aria-labelledby="wool-tab">
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="images-container-{{$key}}">
+                @foreach ($premiumImages[$key] as $index => $image)
+                    <div class="relative holographic-card group image-item" data-aos="zoom-in" data-page="{{ floor($index / 16) + 1 }}">
+                      <img class="h-[200px]  w-full object-cover rounded-lg cursor-pointer" onclick="openModal({{ $index }}, '{{ $key }}')" src="{{$image['src']}}" alt="">
+                      <div class="absolute bottom-0 left-0 right-0 text-white p-1 text-center caption-text opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
+                          style="background-color: rgba(0, 0, 0, 0.6);">
+                          {{ucfirst(str_replace('-premium', '', $key))}}
+                      </div>
+                    </div>
+                @endforeach
+              </div>
+
+              <!-- Pagination for premium images -->
+              <div class="flex justify-center items-center space-x-2 mt-8" id="pagination-{{$key}}">
+                @php
+                  $totalPages = ceil(count($premiumImages[$key]) / 32);
+                @endphp
+                @for($page = 1; $page <= $totalPages; $page++)
+                  <button
+                    class="px-2 py-2 text-sm md:px-3 md:py-2 md:text-lg rounded {{ $page === 1 ? 'bg-[#C5B359] text-black' : 'bg-gray-600 text-white' }} hover:bg-[#C5B359] hover:text-black transition-colors pagination-btn"
+                    data-tab="{{$key}}"
+                    data-page="{{$page}}"
+                    onclick="changePage('{{$key}}', {{$page}})"
+                  >
+                    {{$page}}
+                  </button>
+                @endfor
               </div>
           </div>
        @endforeach
@@ -126,8 +251,10 @@
 <script>
   //form model slider
   let currentIndex = 0;
-  let images = @json($images);
+  let images = @json($bothImages);
+  let currentTabImages = [];
   console.log(images);
+
   function openModal(index = 0,position) {
     currentIndex = index;
     currentTabImages = images[position];
@@ -157,11 +284,54 @@
     updateSlider();
   }
 
+  // Pagination function
+  function changePage(tabId, page) {
+    // Hide all images first
+    const container = document.getElementById(`images-container-${tabId}`);
+    const imageItems = container.querySelectorAll('.image-item');
+
+    imageItems.forEach(item => {
+      item.style.display = 'none';
+    });
+
+    // Show only images for the selected page
+    imageItems.forEach(item => {
+      if (parseInt(item.getAttribute('data-page')) === page) {
+        item.style.display = 'block';
+      }
+    });
+
+    // Update pagination button styles
+    const paginationContainer = document.getElementById(`pagination-${tabId}`);
+    const paginationButtons = paginationContainer.querySelectorAll('.pagination-btn');
+
+    paginationButtons.forEach(btn => {
+      if (parseInt(btn.getAttribute('data-page')) === page) {
+        btn.classList.remove('bg-gray-600', 'text-white');
+        btn.classList.add('bg-[#C5B359]', 'text-black');
+      } else {
+        btn.classList.remove('bg-[#C5B359]', 'text-black');
+        btn.classList.add('bg-gray-600', 'text-white');
+      }
+    });
+  }
+
+  // Initialize pagination for all tabs
+  function initializePagination() {
+    const allTabs = Object.keys(images);
+    allTabs.forEach(tabId => {
+      changePage(tabId, 1); // Show first page by default
+    });
+  }
 
 //for tan animaiton
 document.addEventListener("DOMContentLoaded", function () {
     const tabLinks = document.querySelectorAll('[data-tabs-target]');
     const tabContents = document.querySelectorAll('#default-tab-content > div');
+
+    // Initialize pagination
+    initializePagination();
+
     tabLinks.forEach(link => {
         link.addEventListener("click", function (e) {
 
@@ -186,6 +356,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 void target.offsetWidth;
 
                 target.classList.add("tab-active");
+
+                // Reset to first page when switching tabs
+                changePage(targetId.substring(1), 1);
 
                 // Optionally remove animation class after done
                 setTimeout(() => {

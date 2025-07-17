@@ -58,7 +58,7 @@
           <div class="text-center lg:text-center">
             <h3 class="text-2xl font-bold mb-2">FORMAL WEAR</h3>
             <p class="bg-white text-[16px] md:text-[30px] text-black inline-block px-4 py-1 mb-4">Evening elegance and wedding attire.</p>
-            <div class="flex justify-center lg:justify-center gap-5">
+            <div class="flex justify-center lg:justify-center gap-5 mb-10">
               <span class="w-5 h-5 rounded-full bg-gray-600"></span>
               <span class="w-5 h-5 rounded-full bg-white border"></span>
               <span class="w-5 h-5 rounded-full bg-yellow-200"></span>

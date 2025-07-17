@@ -97,7 +97,7 @@ $premiumImages = [
   'shirting-premium' => $shirtingPremiumImages,
   'blazer-premium' => $blazerPremiumImages,
   'overcoat-premium' => $overcoatPremiumImages,
-  'lining-premium' => $liningPremiumImages,
+  // 'lining-premium' => $liningPremiumImages,
 ];
 
 $bothImages = array_merge($goodImages, $premiumImages);

@@ -8,7 +8,7 @@
             <h1 class="text-[48px]" data-aos="zoom-out">Luxury in Every Thread!</h1>
           </div>
         </div>
-        <div class="bg-[#4F4823] h-[601px] text-justify col-span-4  p-10 my-auto items-center justify-center text-light">
+        <div class="bg-[#4F4823] h-[601px]  col-span-4  p-10 my-auto items-center justify-center text-light">
          <div class="mt-20 text-[20px] text-white">
           <p data-aos="fade-left">True luxury is not just about the finest materials but about the care, craftsmanship, and attention to detail woven into every stitch.</p><br>
           <p data-aos="fade-right">Our bespoke tailoring service is dedicated to creating timeless elegance, ensuring every garment reflects the individuality and sophistication of its wearer.</p>

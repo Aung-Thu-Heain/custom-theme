@@ -58,7 +58,7 @@
     <div class="max-w-6xl  mx-auto px-6  py-14 grid grid-cols-1 md:grid-cols-2 gap-12 ">
         <div >
             <h3 class="text-2xl font-semibold mt-4 text-[36px]">Tailoring Beyond Measure</h3>
-            <p class="mt-4 font-normal text-gray-300 text-[20px] ">
+            <p class="mt-4 font-normal text-gray-300 text-[20px] text-justify">
                 A bespoke suit is more than just clothing—it's an extension of your personality. Unlike off-the-rack options, our custom-tailored suits are crafted to complement your unique physique, style, and preferences, ensuring the perfect fit for every occasion.
             </p>
         </div>
@@ -147,7 +147,7 @@
                 <img src="{{Vite::asset('resources/images/home/testimonial.png')}}" alt="Customer 1" class=" rounded-lg shadow-lg">
               </div>
               <div class="w-full md:w-1/2" >
-                  <p class="font-normal text-[20px] ">"The suit fits perfectly and feels incredibly comfortable. The attention to detail was impressive, and the fabric quality is outstanding. I’ve never felt more confident wearing a suit."</p>
+                  <p class="font-normal text-[20px] text-justify">"The suit fits perfectly and feels incredibly comfortable. The attention to detail was impressive, and the fabric quality is outstanding. I’ve never felt more confident wearing a suit."</p>
                   <p class="mt-4 font-bold">— James Carter, New York, USA</p>
               </div>
           </div>
@@ -157,7 +157,7 @@
                 <img src="{{Vite::asset('resources/images/home/testimonial2.png')}}" alt="Customer 1" class=" rounded-lg shadow-lg">
               </div>
               <div class="w-full md:w-1/2" >
-                  <p class="font-normal text-[20px] ">"The whole experience was enjoyable and stress-free. The final suit looks sharp and feels great to wear. I couldn’t be happier with how it turned out."</p>
+                  <p class="font-normal text-[20px] text-justify">"The whole experience was enjoyable and stress-free. The final suit looks sharp and feels great to wear. I couldn’t be happier with how it turned out."</p>
                   <p class="mt-4 font-bold">— David Thompson, London, UK</p>
               </div>
           </div>
@@ -168,7 +168,7 @@
                 <img src="{{Vite::asset('resources/images/home/testimonial3.png')}}" alt="Customer 1" class=" rounded-lg shadow-lg">
               </div>
               <div class="w-full md:w-1/2" >
-                  <p class="font-normal text-[20px] ">"From the first fitting to the final result, the process was smooth and professional. The craftsmanship is top-notch, and the suit feels like it was made just for me. I’ve received so many compliments."</p>
+                  <p class="font-normal text-[20px] text-justify">"From the first fitting to the final result, the process was smooth and professional. The craftsmanship is top-notch, and the suit feels like it was made just for me. I’ve received so many compliments."</p>
                   <p class="mt-4 font-bold">— Liam Jeremiah, Sydney, Australia</p>
               </div>
           </div>
@@ -178,7 +178,7 @@
                 <img src="{{Vite::asset('resources/images/home/testimonial4.png')}}" alt="Customer 1" class=" rounded-lg shadow-lg">
               </div>
               <div class="w-full md:w-1/2" >
-                  <p class="font-normal text-[20px] ">"I was amazed by how well the suit turned out. Every detail was carefully considered, and the fit is perfect. It’s easily the best suit I’ve ever owned."</p>
+                  <p class="font-normal text-[20px] text-justify">"I was amazed by how well the suit turned out. Every detail was carefully considered, and the fit is perfect. It’s easily the best suit I’ve ever owned."</p>
                   <p class="mt-4 font-bold">— Arjun Mehta, Mumbai, India</p>
               </div>
           </div>

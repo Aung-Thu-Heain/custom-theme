@@ -125,8 +125,7 @@ $bothImages = array_merge($goodImages, $premiumImages);
 
 
 
-<section class="bg-[#010024] text-white font-sans">
-
+<section class="bg-[#010024] text-white ">
   <div class="flex flex-col  md:flex-row min-h-screen">
   <aside class="  md:w-3/10  ">
     <div class="bg-[#0D0D27]  px-6 py-10 md:px-[20px] md:ms-auto md:py-[40px] md:w-[80%] h-fit mt-[100px]">
@@ -152,18 +151,39 @@ $bothImages = array_merge($goodImages, $premiumImages);
 
       </ul>
 
-
-
     </div>
   </aside>
 
   <div class="flex-1 px-6 pt-10 pb-5 md:px-[50px] md:pt-[100px] md:pb-[20px]" id="default-tab-content">
+
+       {{-- loading  --}}
+      <div id="page-loading-overlay" class=" inset-0 z-[999] flex items-center justify-center bg-[#010024] bg-opacity-90">
+          <div class="grid md:grid-cols-4  grid-cols-2 gap-6">
+              @for($i=0;$i<16;$i++)
+                  <div class="w-[200px] h-[200px] flex items-center justify-center bg-gray-100 rounded-lg animate-pulse">
+                      <svg class="h-[100px] text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                          <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"/>
+                      </svg>
+                  </div>
+              @endfor
+          </div>
+      </div>
+
        @foreach($goodImages as $key => $imageGroup)
           <div class="hidden" id="{{$key}}" role="tabpanel" aria-labelledby="wool-tab">
               <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="images-container-{{$key}}">
                 @foreach ($goodImages[$key] as $index => $image)
                     <div class="relative holographic-card group image-item" data-aos="zoom-in" data-page="{{ floor($index / 16) + 1 }}">
-                      <img class="h-[200px]  w-full object-cover rounded-lg cursor-pointer" onclick="openModal({{ $index }}, '{{ $key }}')" src="{{$image['src']}}" alt="">
+
+                    <div class="absolute inset-0 flex items-center justify-center bg-gray-100 animate-pulse placeholder-{{$index}}">
+                        <svg class="h-[200px] text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                            <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"/>
+                        </svg>
+                    </div>
+
+                      <img class="h-[200px]  w-full rounded-lg cursor-pointer" onclick="openModal({{ $index }}, '{{ $key }}')" src="{{$image['src']}}" alt=""
+                      loading="lazy"
+                onload="this.previousElementSibling.style.display='none';">
                       <div class="absolute bottom-0 left-0 right-0 text-white p-1 text-center caption-text opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
                           style="background-color: rgba(0, 0, 0, 0.6);">
                           {{ucfirst(str_replace('-premium', '', $key))}}
@@ -196,7 +216,7 @@ $bothImages = array_merge($goodImages, $premiumImages);
               <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="images-container-{{$key}}">
                 @foreach ($premiumImages[$key] as $index => $image)
                     <div class="relative holographic-card group image-item" data-aos="zoom-in" data-page="{{ floor($index / 16) + 1 }}">
-                      <img class="h-[200px]  w-full object-cover rounded-lg cursor-pointer" onclick="openModal({{ $index }}, '{{ $key }}')" src="{{$image['src']}}" alt="">
+                      <img class="h-[200px]  w-full  rounded-lg cursor-pointer" onclick="openModal({{ $index }}, '{{ $key }}')" src="{{$image['src']}}" alt="">
                       <div class="absolute bottom-0 left-0 right-0 text-white p-1 text-center caption-text opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
                           style="background-color: rgba(0, 0, 0, 0.6);">
                           {{ucfirst(str_replace('-premium', '', $key))}}
@@ -324,8 +344,13 @@ $bothImages = array_merge($goodImages, $premiumImages);
     });
   }
 
-//for tan animaiton
+//for tan animaito
+window.addEventListener("load", (event) => {
+   document.getElementById('page-loading-overlay').style.display = 'none';
+});
 document.addEventListener("DOMContentLoaded", function () {
+
+
     const tabLinks = document.querySelectorAll('[data-tabs-target]');
     const tabContents = document.querySelectorAll('#default-tab-content > div');
 

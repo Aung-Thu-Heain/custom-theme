@@ -8,10 +8,15 @@
               <div class="text-center" >
                   <img src="{{Vite::asset('resources/images/header/logo.png')}}" alt="Logo" class="mx-auto mb-4 h-[73px]">
                   <div class="flex  justify-center  gap-4 mt-20">
-                      <a href="#"><img src="{{Vite::asset('resources/images/icons/whatsapp.png')}}" alt="WhatsApp" class="w-6"></a>
-                      <a href="#"><img src="{{Vite::asset('resources/images/icons/facebook.png')}}" alt="Facebook" class="w-6"></a>
-                      <a href="#"><img src="{{Vite::asset('resources/images/icons/instergam.png')}}" alt="Instagram" class="w-6"></a>
-                      <a href="#"><img src="{{Vite::asset('resources/images/icons/tiktot.png')}}" alt="TikTok" class="w-6"></a>
+                      <a target="_blank" href="https://wa.me/66838345118"><img src="{{Vite::asset('resources/images/icons/whatsapp.png')}}" alt="WhatsApp" class="w-6"></a>
+                      <a target="_blank" href="https://www.facebook.com/share/173H9Nn7i6/?mibextid=wwXIfr"><img src="{{Vite::asset('resources/images/icons/facebook.png')}}" alt="Facebook" class="w-6"></a>
+                      <a target="_blank" href="https://www.instagram.com/icontailoehouse?igsh=MXNhb3RlamV6enBidA=="><img src="{{Vite::asset('resources/images/icons/instergam.png')}}" alt="Instagram" class="w-6"></a>
+                      <a target="_blank" href="https://www.tiktok.com/@icon_tailor_house?_t=ZS-8yEPyitMNSm&_r=1"><img src="{{Vite::asset('resources/images/icons/tiktot.png')}}" alt="TikTok" class="w-6"></a>
+                      <a target="_blank" href="https://x.com/house_icon37471?s=21">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-[#9B9BB7]">
+                          <path d="M18.254 3h2.792l-6.103 6.965 7.207 10.035h-5.673l-4.402-6.29-5.042 6.29H4.241l6.43-7.922L3.667 3h5.884l3.82 5.426L18.254 3zm-.987 16.218h1.54l-9.872-14h-1.64l9.972 14z"/>
+                        </svg>
+                      </a>
                   </div>
               </div>
 
@@ -65,5 +70,36 @@
       duration: 1000,
       once:false,
     });
+
+document.addEventListener('wpcf7mailsent', function(event) {
+  // Only trigger for specific form (optional: get ID in CF7 shortcode like [contact-form-7 id="123" ...])
+  if (event.detail.contactFormId = "e9d0f9f") {
+    const inputs = event.target;
+
+    const name = inputs.querySelector('[name="text-875"]')?.value;
+    const email = inputs.querySelector('[name="email-285"]')?.value;
+    const phone = inputs.querySelector('[name="phonetext-149"]')?.value;
+    const service_preferences = inputs.querySelector('[name="select-898"]')?.value;
+    const appointment_date = inputs.querySelector('[name="datepicker-822"]')?.value;
+    const location = inputs.querySelector('[name="radio-19"]')?.value;
+    console.log(name,email,phone,service_preferences,appointment_date,location);
+
+
+    const fullMessage = `Hello, I would like to make an appointment.
+      # Name: ${name}
+      # Email: ${email}
+      # Phone: ${phone}
+      # Service Preferences:${service_preferences}
+      # Appointment Date: ${appointment_date}
+      # Location: ${location}
+      Thank you!`;
+    const whatsappUrl = "https://wa.me/66838345118?text=" + encodeURIComponent(fullMessage);
+
+    // Redirect to WhatsApp chat
+    window.location.href = whatsappUrl;
+
+  }
+}, false);
+
   </script>
 </footer>

@@ -65,13 +65,13 @@
                   <a href="#" class="inline-block p-4  rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="blouse-tab" data-tabs-target="#blouse" type="button" role="tab" aria-controls="blouse" aria-selected="false">Blouse</a>
               </li>
               <li class="mx-2 md:mx-12" data-aos="zoom-in">
-                  <a href="#" class="inline-block p-4  rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="jacket-tab" data-tabs-target="#jacket" type="button" role="tab" aria-controls="jacket" aria-selected="false">Jacket</a>
+                  <a href="#" class="inline-block p-4  rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="jacket-tab" data-tabs-target="#jacket" type="button" role="tab" aria-controls="jacket" aria-selected="false">Blazer</a>
               </li>
               <li class="mx-2 md:mx-12" data-aos="zoom-in">
-                  <a href="#" class="inline-block p-4  rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="pant-tab" data-tabs-target="#pant" type="button" role="tab" aria-controls="pant" aria-selected="false">Pant & Skirt</a>
+                  <a href="#" class="inline-block p-4  rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="pant-tab" data-tabs-target="#pant" type="button" role="tab" aria-controls="pant" aria-selected="false">Pant</a>
               </li>
               <li class="mx-2 md:mx-12" data-aos="zoom-in">
-                  <a href="#" class="inline-block p-4  rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dress-tab" data-tabs-target="#dress" type="button" role="tab" aria-controls="dress" aria-selected="false">Dress</a>
+                  <a href="#" class="inline-block p-4  rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dress-tab" data-tabs-target="#dress" type="button" role="tab" aria-controls="dress" aria-selected="false">Skirt</a>
               </li>
               <li class="mx-2 md:mx-12" data-aos="zoom-in">
                 <a href="#" class="inline-block p-4  rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="coat-tab" data-tabs-target="#coat" type="button" role="tab" aria-controls="coat" aria-selected="false">OverCoat</a>
@@ -80,58 +80,70 @@
         </div>
         <div id="default-tab-content">
           <div class="hidden" id="suit" role="tabpanel" aria-labelledby="suit-tab">
-              <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
-                  @for($i = 1; $i < 13; $i++)
-                      <div class="holographic-card" data-aos="zoom-in ">
-                        <img src="{{Vite::asset('resources/images/womenwear/suit'.$i.'.png')}}" class="object-cover w-full h-[398px]" alt="">
-                      </div>
-                   @endfor
-              </div>
+              <div class="max-w-6xl mx-auto columns-2 md:columns-4 gap-4 space-y-4 mt-5">
+                @for($i = 1; $i < 20; $i++)
+                    <div class="break-inside-avoid overflow-hidden rounded holographic-card" data-aos="zoom-in">
+                        <img src="{{ Vite::asset('resources/images/womenwear/suit' . $i . '.png') }}"
+                            class="w-full h-auto object-cover"
+                            alt="">
+                    </div>
+                @endfor
+            </div>
           </div>
           <div class="hidden" id="blouse" role="tabpanel" aria-labelledby="blouse-tab">
-              <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
-                  @for($i = 1; $i < 13; $i++)
-                      <div class="holographic-card" data-aos="zoom-in ">
-                        <img src="{{Vite::asset('resources/images/womenwear/blouse'.$i.'.png')}}" class="object-cover w-full h-[398px]" alt="">
-                      </div>
-                   @endfor
-              </div>
+            <div class="max-w-6xl mx-auto columns-2 md:columns-4 gap-4 space-y-4 mt-5">
+              @for($i = 1; $i < 20; $i++)
+                  <div class="break-inside-avoid overflow-hidden rounded holographic-card" data-aos="zoom-in">
+                      <img src="{{ Vite::asset('resources/images/womenwear/blouse' . $i . '.png') }}"
+                           class="w-full h-auto object-cover"
+                           alt="">
+                  </div>
+              @endfor
+          </div>
           </div>
           <div class="hidden" id="jacket" role="tabpanel" aria-labelledby="jacket-tab">
-              <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
-                  @for($i = 1; $i < 13; $i++)
-                      <div class="holographic-card" data-aos="zoom-in ">
-                        <img src="{{Vite::asset('resources/images/womenwear/jacket'.$i.'.png')}}" class="object-cover w-full h-[398px]" alt="">
-                      </div>
-                   @endfor
-              </div>
+            <div class="max-w-6xl mx-auto columns-2 md:columns-4 gap-4 space-y-4 mt-5">
+              @for($i = 1; $i < 20; $i++)
+                  <div class="break-inside-avoid overflow-hidden rounded holographic-card" data-aos="zoom-in">
+                      <img src="{{ Vite::asset('resources/images/womenwear/blazer' . $i . '.png') }}"
+                           class="w-full h-auto object-cover"
+                           alt="">
+                  </div>
+              @endfor
+          </div>
           </div>
           <div class="hidden" id="pant" role="tabpanel" aria-labelledby="pant-tab">
-              <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
-                  @for($i = 1; $i < 13; $i++)
-                      <div class="holographic-card" data-aos="zoom-in ">
-                        <img src="{{Vite::asset('resources/images/womenwear/pank'.$i.'.png')}}" class="object-cover w-full h-[398px]" alt="">
-                      </div>
-                   @endfor
-              </div>
+            <div class="max-w-6xl mx-auto columns-2 md:columns-4 gap-4 space-y-4 mt-5">
+              @for($i = 1; $i < 20; $i++)
+                  <div class="break-inside-avoid overflow-hidden rounded holographic-card" data-aos="zoom-in">
+                      <img src="{{ Vite::asset('resources/images/womenwear/pant' . $i . '.png') }}"
+                           class="w-full h-auto object-cover"
+                           alt="">
+                  </div>
+              @endfor
+          </div>
           </div>
           <div class="hidden" id="dress" role="tabpanel" aria-labelledby="dress-tab">
-              <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
-                  @for($i = 1; $i < 13; $i++)
-                      <div class="holographic-card" data-aos="zoom-in ">
-                        <img src="{{Vite::asset('resources/images/womenwear/dress'.$i.'.png')}}" class="object-cover w-full h-[398px]" alt="">
-                      </div>
-                   @endfor
-              </div>
+            <div class="max-w-6xl mx-auto columns-2 md:columns-4 gap-4 space-y-4 mt-5">
+              @for($i = 1; $i < 20; $i++)
+                  <div class="break-inside-avoid overflow-hidden rounded holographic-card" data-aos="zoom-in">
+                      <img src="{{ Vite::asset('resources/images/womenwear/skirt' . $i . '.png') }}"
+                           class="w-full h-auto object-cover"
+                           alt="">
+                  </div>
+              @endfor
+          </div>
           </div>
           <div class="hidden" id="coat" role="tabpanel" aria-labelledby="coat-tab">
-              <div class="max-w-6xl grid  mt-5 grid-cols-2  md:grid-cols-4 mx-auto gap-4">
-                  @for($i = 1; $i < 13; $i++)
-                      <div class="holographic-card" data-aos="zoom-in ">
-                        <img src="{{Vite::asset('resources/images/womenwear/overcoat'.$i.'.png')}}" class="object-cover w-full h-[398px]" alt="">
-                      </div>
-                   @endfor
-              </div>
+            <div class="max-w-6xl mx-auto columns-2 md:columns-4 gap-4 space-y-4 mt-5">
+              @for($i = 1; $i < 20; $i++)
+                  <div class="break-inside-avoid overflow-hidden rounded holographic-card" data-aos="zoom-in">
+                      <img src="{{ Vite::asset('resources/images/womenwear/overcoat' . $i . '.png') }}"
+                           class="w-full h-auto object-cover"
+                           alt="">
+                  </div>
+              @endfor
+          </div>
           </div>
         </div>
      </div>

@@ -32,16 +32,41 @@
             </p>
         </div>
         <div class=" max-w-6xl mx-auto px-4  pb-26 " data-aos="zoom-in-up">
+
             <div class="relative flex justify-center responsiveIframe">
                 <div class="absolute inset-0 bg-black/60"></div>
                 {{-- <img src="{{Vite::asset('resources/images/home/about-craft.png')}}" alt="Tailoring Process" class="object-cover rounded w-full max-h-[543px] shadow-lg"> --}}
 
-                 <iframe class="w-full min-h-[200px] md:min-h-[630px]"  src="https://www.youtube.com/embed/qXbWq1_gWNg?si=rdnTf7Fg4w2zpRfr&amp;controls=0&autoplay=1&mute=1&showinfo=0&amp;autohide=1&amp;rel=0&amp;hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                {{-- <button class="absolute inset-0 flex items-center justify-center">
-                    <div data-aos="fade-right" class="bg-black bg-opacity-70 rounded-full w-24 h-24 flex items-center justify-center">
-                        <img src="{{Vite::asset('resources/images/home/play.png')}}" alt="">
-                    </div>
-                </button> --}}
+                 {{-- <iframe class="w-full min-h-[200px] md:min-h-[630px]"  src="https://www.youtube.com/embed/qXbWq1_gWNg?si=rdnTf7Fg4w2zpRfr&amp;controls=0&autoplay=1&mute=1&showinfo=0&amp;autohide=1&amp;rel=0&amp;hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe> --}}
+
+
+                 {{-- <iframe  class="w-full min-h-[200px] md:min-h-[630px]" src="https://www.youtube.com/embed/75nNqaNOYrs?si=U_zvwbYnrXXQ8MZS&amp;controls=0&autoplay=1&mute=1&showinfo=0&amp;autohide=1&amp;rel=0&amp;hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                 <iframe class="w-full min-h-[200px] md:min-h-[630px]" src="https://www.youtube.com/embed/5XhCHaZmssA?si=z6RjqgvOacqkxYmh&amp;controls=0&autoplay=1&mute=1&showinfo=0&amp;autohide=1&amp;rel=0&amp;hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> --}}
+
+
+                 {{-- <iframe
+                 class="w-full min-h-[200px] md:min-h-[630px]"
+                 src="https://www.youtube.com/embed/75nNqaNOYrs?autoplay=1&mute=1&controls=0&loop=1&playlist=75nNqaNOYrs&rel=0&showinfo=0&modestbranding=1"
+                 title="YouTube video player"
+                 frameborder="0"
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                 referrerpolicy="strict-origin-when-cross-origin"
+                 allowfullscreen
+               ></iframe> --}}
+
+               <video
+                class="w-full min-h-[200px] md:min-h-[630px]"
+                autoplay
+                muted
+                loop
+                playsinline
+              >
+                <source src="http://wordpress.test/video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+
                 <a href="/about-us" data-aos="fade-left" class="absolute  rounded-2xl hover:bg-primary  bottom-0 text-white flex p-4 mb-2">
                   Discover Our Story <img src="{{Vite::asset('resources/images/home/arrow-right-line.png')}}" class="ml-2" alt="">
                 </a>

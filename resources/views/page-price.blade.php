@@ -27,12 +27,12 @@
     </p>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+  {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
 
     <div class="bg-[#0D0D27] rounded-2xl overflow-hidden shadow-md flex flex-col justify-between" data-aos="zoom-in">
 
       <div class="bg-[#171730] p-6 text-center">
-        <h3 class="text-4xl mb-2 font-bold">Best</h3>
+        <h3 class="text-4xl mb-2 font-bold">BEST QUALITY</h3>
         <p class="text-gray-300">Package</p>
       </div>
 
@@ -69,7 +69,7 @@
     <div class="bg-[#0D0D27] rounded-2xl overflow-hidden shadow-md flex flex-col justify-between" data-aos="zoom-in">
 
       <div class="bg-[#171730] p-6 text-center">
-        <h3 class="text-4xl mb-2 font-bold">PREMIUM</h3>
+        <h3 class="text-4xl mb-2 font-bold">PREMIUM QUALITY</h3>
         <p class="text-gray-300">Package</p>
       </div>
 
@@ -107,7 +107,7 @@
     <div class="bg-[#0D0D27] rounded-2xl overflow-hidden shadow-md flex flex-col justify-between" data-aos="zoom-in">
 
       <div class="bg-[#171730] p-6 text-center">
-        <h3 class="text-4xl mb-2 font-bold">LUXURY COMBO</h3>
+        <h3 class="text-4xl mb-2 font-bold">LUXURY QUALITY</h3>
         <p class="text-gray-300">Package</p>
       </div>
 
@@ -147,7 +147,154 @@
         </div>
       </div>
     </div>
+  </div> --}}
+
+  {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    <!-- BEST QUALITY -->
+    <div class="bg-gradient-to-br from-[#111827] via-[#1f2937] to-[#0f172a] text-white rounded-2xl shadow-lg overflow-hidden flex flex-col justify-between" data-aos="zoom-in">
+      <div class="bg-[#1e293b] p-6 text-center">
+        <h3 class="text-4xl mb-2 font-bold text-yellow-400">BEST QUALITY</h3>
+        <p class="text-gray-300">Package</p>
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-grow">
+        <p class="text-center text-gray-200 py-10 text-lg">
+          <sup class="relative -top-5">From</sup>
+          <span class="text-yellow-400 text-3xl font-bold">35,000</span><span class="text-sm"> / THB</span>
+        </p>
+        <ul class="text-lg space-y-2 ps-10 text-left text-gray-200 mb-8 list-none">
+          <li class="flex items-center">• 3 Jackets</li>
+          <li class="flex items-center">• 3 Pants or Skirts</li>
+          <li class="flex items-center">• 6 Shirts or Blouses</li>
+          <li class="flex items-center">• 1 Winter Coat</li>
+        </ul>
+        <div class="p-4 text-center">
+          <a href="/contact-us" class="w-full block py-2 bg-yellow-400 text-black text-lg font-semibold rounded-lg hover:bg-yellow-300 transition">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PREMIUM QUALITY -->
+    <div class="bg-gradient-to-br from-[#160ac8] via-[#230394] to-[#10013b] text-white rounded-2xl shadow-xl scale-105 ring-4 ring-purple-400 overflow-hidden flex flex-col justify-between" data-aos="zoom-in">
+      <div class="bg-[#2a0e6a] p-6 text-center">
+        <h3 class="text-4xl mb-2 font-bold text-white">PREMIUM QUALITY</h3>
+        <p class="text-purple-100">Most Popular</p>
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-grow">
+        <p class="text-center text-white py-10 text-lg">
+          <sup class="relative -top-5">From</sup>
+          <span class="text-white text-3xl font-bold">45,000</span><span class="text-sm"> / THB</span>
+        </p>
+        <ul class="text-lg space-y-2 ps-10 text-left text-white mb-8 list-none">
+          <li class="flex items-center">• 3 Jackets</li>
+          <li class="flex items-center">• 3 Pants or Skirts</li>
+          <li class="flex items-center">• 6 Shirts or Blouses</li>
+          <li class="flex items-center">• 1 Winter Coat</li>
+        </ul>
+        <div class="p-4 text-center">
+          <a href="/contact-us" class="w-full block py-2 bg-white text-purple-700 text-lg font-semibold rounded-lg hover:bg-purple-100 transition">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- LUXURY QUALITY -->
+    <div class="bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#1d4ed8] text-white rounded-2xl shadow-lg overflow-hidden flex flex-col justify-between" data-aos="zoom-in">
+      <div class="bg-[#1e40af] p-6 text-center">
+        <h3 class="text-4xl mb-2 font-bold text-white">LUXURY QUALITY</h3>
+        <p class="text-blue-100">Package</p>
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-grow">
+        <p class="text-center text-white py-10 text-lg">
+          <sup class="relative -top-5">From</sup>
+          <span class="text-white text-3xl font-bold">100,000</span><span class="text-sm"> / THB</span>
+        </p>
+        <ul class="text-lg space-y-2 ps-10 text-left text-white mb-8 list-none">
+          <li class="flex items-center">• 6 Jackets</li>
+          <li class="flex items-center">• 6 Pants or Skirts</li>
+          <li class="flex items-center">• 3 Vests</li>
+          <li class="flex items-center">• 14 Shirts or Blouses</li>
+          <li class="flex items-center">• 1 Winter Coat</li>
+          <li class="flex items-center">• 1 Sports Jacket</li>
+        </ul>
+        <div class="p-4 text-center">
+          <a href="/contact-us" class="w-full block py-2 bg-white text-blue-700 text-lg font-semibold rounded-lg hover:bg-blue-100 transition">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div> --}}
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    <!-- BEST QUALITY -->
+    <div class="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white rounded-2xl shadow-lg overflow-hidden flex flex-col justify-between" data-aos="zoom-in">
+      <div class="bg-[#1e293b] p-6 text-center">
+        <h3 class="text-4xl mb-2 font-bold text-yellow-400">BEST QUALITY</h3>
+        <p class="text-gray-300">Package</p>
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-grow">
+        <p class="text-center text-gray-200 py-10 text-lg">
+          <sup class="relative -top-5">From</sup>
+          <span class="text-yellow-400 text-3xl font-bold">35,000</span><span class="text-sm"> / THB</span>
+        </p>
+        <ul class="text-lg space-y-2 ps-10 text-left text-gray-200 mb-8 list-none">
+          <li>• 3 Jackets</li>
+          <li>• 3 Pants or Skirts</li>
+          <li>• 6 Shirts or Blouses</li>
+          <li>• 1 Winter Coat</li>
+        </ul>
+        <div class="p-4 text-center">
+          <a href="/contact-us" class="w-full block py-2 bg-yellow-400 text-black text-lg font-semibold rounded-lg hover:bg-yellow-300 transition">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PREMIUM QUALITY -->
+    <div class="bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#1d4ed8] text-white rounded-2xl shadow-xl scale-105 ring-4 ring-blue-300 overflow-hidden flex flex-col justify-between" data-aos="zoom-in">
+      <div class="bg-[#1e40af] p-6 text-center">
+        <h3 class="text-4xl mb-2 font-bold text-yellow-300">PREMIUM QUALITY</h3>
+        <p class="text-blue-100">Most Popular</p>
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-grow">
+        <p class="text-center text-white py-10 text-lg">
+          <sup class="relative -top-5">From</sup>
+          <span class="text-yellow-300 text-3xl font-bold">45,000</span><span class="text-sm"> / THB</span>
+        </p>
+        <ul class="text-lg space-y-2 ps-10 text-left text-white mb-8 list-none">
+          <li>• 3 Jackets</li>
+          <li>• 3 Pants or Skirts</li>
+          <li>• 6 Shirts or Blouses</li>
+          <li>• 1 Winter Coat</li>
+        </ul>
+        <div class="p-4 text-center">
+          <a href="/contact-us" class="w-full block py-2 bg-yellow-300 text-blue-900 text-lg font-semibold rounded-lg hover:bg-yellow-200 transition">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- LUXURY QUALITY -->
+    <div class="bg-gradient-to-br from-[#0ea5e9] via-[#0284c7] to-[#0369a1] text-white rounded-2xl shadow-lg overflow-hidden flex flex-col justify-between" data-aos="zoom-in">
+      <div class="bg-[#0284c7] p-6 text-center">
+        <h3 class="text-4xl mb-2 font-bold text-white">LUXURY QUALITY</h3>
+        <p class="text-blue-100">Package</p>
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-grow">
+        <p class="text-center text-white py-10 text-lg">
+          <sup class="relative -top-5">From</sup>
+          <span class="text-white text-3xl font-bold">100,000</span><span class="text-sm"> / THB</span>
+        </p>
+        <ul class="text-lg space-y-2 ps-10 text-left text-white mb-8 list-none">
+          <li>• 6 Jackets</li>
+          <li>• 6 Pants or Skirts</li>
+          <li>• 3 Vests</li>
+          <li>• 14 Shirts or Blouses</li>
+          <li>• 1 Winter Coat</li>
+          <li>• 1 Sports Jacket</li>
+        </ul>
+        <div class="p-4 text-center">
+          <a href="/contact-us" class="w-full block py-2 bg-white text-blue-700 text-lg font-semibold rounded-lg hover:bg-blue-100 transition">Book Now</a>
+        </div>
+      </div>
+    </div>
   </div>
+
 </section>
 
 @include('partials.appointment')

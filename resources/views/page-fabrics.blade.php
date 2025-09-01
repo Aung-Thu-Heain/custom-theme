@@ -13,7 +13,7 @@ $shirtingPremiumImages=[];
 $blazerPremiumImages=[];
 $overcoatPremiumImages=[];
 $liningPremiumImages = [];
-for ($i = 1; $i <= 71; $i++) {
+for ($i = 1; $i <= 41; $i++) {
     $suitingGoodImages[] = [
         'src' => Vite::asset("resources/images/fabrics/best/suiting/suiting{$i}.jpg"),
         'caption' => ''
@@ -34,7 +34,7 @@ for ($i = 1; $i <= 16; $i++) {
     ];
 }
 
-for ($i = 1; $i <= 17; $i++) {
+for ($i = 1; $i <= 6; $i++) {
     $overcoatGoodImages[] = [
         'src' => Vite::asset("resources/images/fabrics/best/overcoat/overcoat{$i}.jpg"),
         'caption' => ''
@@ -48,7 +48,7 @@ for ($i = 1; $i <= 58; $i++) {
     ];
 }
 
-for ($i = 1; $i <= 38; $i++) {
+for ($i = 1; $i <= 259; $i++) {
     $suitingPremiumImages[] = [
         'src' => Vite::asset("resources/images/fabrics/premium/suiting/suiting{$i}.jpg"),
         'caption' => ''
@@ -101,6 +101,8 @@ $premiumImages = [
 ];
 
 $bothImages = array_merge($goodImages, $premiumImages);
+
+
 
 @endphp
 
@@ -193,19 +195,20 @@ $bothImages = array_merge($goodImages, $premiumImages);
               </div>
 
               <!-- Pagination for good images -->
-              <div class="flex justify-center items-center space-x-2 mt-8" id="pagination-{{$key}}">
+              <div class="flex flex-wrap justify-center items-center space-x-2 mt-8" id="pagination-{{$key}}">
                 @php
-                  $totalPages = ceil(count($goodImages[$key]) / 32);
+                  $totalPages = ceil(count($goodImages[$key]) / 16);
                 @endphp
                 @for($page = 1; $page <= $totalPages; $page++)
                   <button
-                    class="px-2 py-2 text-sm md:px-3 md:py-2 md:text-lg rounded {{ $page === 1 ? 'bg-[#C5B359] text-black' : 'bg-gray-600 text-white' }} hover:bg-[#C5B359] hover:text-black transition-colors pagination-btn"
+                    class=" px-2 py-2 text-sm md:px-3 md:py-2 md:text-lg rounded {{ $page === 1 ? 'bg-[#C5B359] text-black' : 'bg-gray-600 text-white' }} hover:bg-[#C5B359] hover:text-black transition-colors pagination-btn"
                     data-tab="{{$key}}"
                     data-page="{{$page}}"
                     onclick="changePage('{{$key}}', {{$page}})"
                   >
                     {{$page}}
                   </button>
+
                 @endfor
               </div>
           </div>
@@ -226,9 +229,9 @@ $bothImages = array_merge($goodImages, $premiumImages);
               </div>
 
               <!-- Pagination for premium images -->
-              <div class="flex justify-center items-center space-x-2 mt-8" id="pagination-{{$key}}">
+              <div class="flex flex-wrap justify-center items-center space-y-2 gap-2 mt-8" id="pagination-{{$key}}">
                 @php
-                  $totalPages = ceil(count($premiumImages[$key]) / 32);
+                  $totalPages = ceil(count($premiumImages[$key]) / 16);
                 @endphp
                 @for($page = 1; $page <= $totalPages; $page++)
                   <button
@@ -239,6 +242,7 @@ $bothImages = array_merge($goodImages, $premiumImages);
                   >
                     {{$page}}
                   </button>
+
                 @endfor
               </div>
           </div>
